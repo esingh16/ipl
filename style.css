@@ -12,7 +12,6 @@
   --shadow-soft: 0 18px 40px rgba(0, 0, 0, 0.6);
 }
 
-/* Global reset */
 *,
 *::before,
 *::after {
@@ -29,7 +28,6 @@ body {
   min-height: 100vh;
 }
 
-/* Hero */
 .hero {
   position: relative;
   padding: 24px 16px 40px;
@@ -84,14 +82,12 @@ body {
   backdrop-filter: blur(10px);
 }
 
-/* Layout */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 16px;
 }
 
-/* Panels */
 .panel {
   background: linear-gradient(135deg, #171b3a, #0a0f24);
   border-radius: var(--radius-lg);
@@ -115,7 +111,6 @@ body {
   margin-top: 4px;
 }
 
-/* Team tabs */
 .team-tabs {
   display: flex;
   flex-wrap: wrap;
@@ -145,7 +140,6 @@ body {
   border-color: transparent;
 }
 
-/* Best 12 layout */
 .best12-wrapper {
   display: grid;
   grid-template-columns: minmax(0, 2.5fr) minmax(0, 1.3fr);
@@ -158,7 +152,6 @@ body {
   font-size: 0.84rem;
 }
 
-/* Player cards */
 .player-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(155px, 1fr));
@@ -173,16 +166,6 @@ body {
   border: 1px solid #ffffff22;
   box-shadow: 0 12px 26px rgba(0, 0, 0, 0.6);
   overflow: hidden;
-  cursor: default;
-}
-
-.player-card::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(circle at 120% -10%, #ffd16633 0, transparent 60%);
-  opacity: 0.7;
-  pointer-events: none;
 }
 
 .player-main {
@@ -193,9 +176,7 @@ body {
   align-items: center;
 }
 
-.player-info {
-  max-width: 100%;
-}
+.player-info {}
 
 .player-name {
   font-size: 0.95rem;
@@ -245,17 +226,9 @@ body {
 }
 
 .player-meta {
-  position: relative;
   margin-top: 4px;
   font-size: 0.72rem;
   color: var(--muted);
-}
-
-/* Impact card */
-.impact-wrapper h3,
-.xi-wrapper h3 {
-  font-size: 1rem;
-  margin-bottom: 6px;
 }
 
 .impact-card {
@@ -280,10 +253,8 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: #54d6ff;
-  opacity: 0.9;
 }
 
-/* Stats tables */
 .stats-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -326,13 +297,11 @@ tbody tr:hover {
   background: #171c3d;
 }
 
-/* Projections */
-#projectionsTable td:nth-child(4),
-#projectionsTable td:nth-child(5) {
+#projectionsTable td:nth-child(3),
+#projectionsTable td:nth-child(4) {
   font-variant-numeric: tabular-nums;
 }
 
-/* Footer */
 .footer {
   text-align: center;
   padding: 14px 10px 20px;
@@ -340,7 +309,12 @@ tbody tr:hover {
   color: var(--muted);
 }
 
-/* Responsive */
+.summary-text {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: var(--accent3);
+}
+
 @media (max-width: 800px) {
   .best12-wrapper {
     grid-template-columns: minmax(0, 1fr);
