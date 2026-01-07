@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>IPL 2026 AI XI – Best 12 & Live Stats</title>
+  <title>IPL 2026 AI XI & Predictions</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -10,89 +10,82 @@
   <header class="hero">
     <div class="hero-overlay"></div>
     <div class="hero-content">
-      <h1>IPL 2026 AI Best 12</h1>
+      <h1>IPL 2026 AI XI & Predictions</h1>
       <p>
-        Dynamic, colour‑rich XI + Impact Player for every team, with live‑style
-        top run‑getters and wicket‑takers powered by simple AI scoring.
+        AI/ML‑style engine picks the best 12 for each IPL 2026 team and predicts
+        top run‑getters, wicket‑takers, top‑4 and the title favourite using 2025 form and 2026 squads. [web:51][web:52][web:59][web:60][web:65][web:55][web:58][web:63][web:66]
       </p>
       <div class="chip-row">
-        <span class="chip">Best XI</span>
-        <span class="chip">Impact Player</span>
-        <span class="chip">Top Runs</span>
-        <span class="chip">Top Wickets</span>
+        <span class="chip">Best XI + Impact</span>
+        <span class="chip">Top Runs (Pred)</span>
+        <span class="chip">Top Wickets (Pred)</span>
+        <span class="chip">Top‑4 & Winner (Pred)</span>
       </div>
     </div>
   </header>
 
   <main class="container">
-    <!-- Team selector -->
     <section class="panel">
       <div class="panel-header">
-        <h2>Choose Team</h2>
-        <p>Select an IPL 2026 franchise to view its AI‑picked best 12.</p>
+        <h2>Pick a Team</h2>
+        <p>View the AI‑picked playing XI and impact player for any IPL 2026 franchise.</p>
       </div>
-      <div id="teamTabs" class="team-tabs">
-        <!-- Filled by JS -->
-      </div>
+      <div id="teamTabs" class="team-tabs"></div>
     </section>
 
-    <!-- Best 12 section -->
     <section class="panel">
       <div class="panel-header">
-        <h2 id="teamTitle">Team XI & Impact</h2>
+        <h2 id="teamTitle">Team XI & Impact Player</h2>
         <p class="subtitle">
-          XI picked using a scoring model that combines role, form and balance.
+          XI respects max four overseas players and ensures strong bowling depth and role balance.
         </p>
       </div>
       <div class="best12-wrapper">
-        <div class="xi-wrapper">
+        <div>
           <h3>Playing XI</h3>
           <div id="xiGrid" class="player-grid"></div>
         </div>
-        <div class="impact-wrapper">
+        <div>
           <h3>Impact Player</h3>
           <div id="impactCard" class="impact-card empty">
-            <p>Select a team to view the impact player.</p>
+            <p>Select a team to see the model pick.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Stats section -->
     <section class="panel">
       <div class="panel-header">
-        <h2>Top Performers (Mocked Live)</h2>
+        <h2>League‑wide Predictions</h2>
         <p>
-          These tables use sample data shaped like IPL 2026 stats so you can later
-          swap in real API calls to sites like Cricbuzz or CricÓ scoring. [web:4][web:12]
+          Uses 2025 batting/bowling form plus 2026 squads to project season‑long
+          impact. Replace with live stats later if you want. [web:51][web:52][web:59][web:60][web:65]
         </p>
       </div>
       <div class="stats-grid">
         <div>
-          <h3>Top 5 Run‑Getters</h3>
+          <h3>Top 5 Run‑Getters (Pred)</h3>
           <table id="runsTable">
             <thead>
               <tr>
                 <th>#</th>
                 <th>Player</th>
                 <th>Team</th>
-                <th>Runs</th>
-                <th>SR</th>
+                <th>Score</th>
               </tr>
             </thead>
             <tbody></tbody>
           </table>
         </div>
         <div>
-          <h3>Top 5 Wicket‑Takers</h3>
+          <h3>Top 5 Wicket‑Takers (Pred)</h3>
           <table id="wicketsTable">
             <thead>
               <tr>
                 <th>#</th>
                 <th>Player</th>
                 <th>Team</th>
-                <th>Wkts</th>
-                <th>Econ</th>
+                <th>Score</th>
               </tr>
             </thead>
             <tbody></tbody>
@@ -101,34 +94,33 @@
       </div>
     </section>
 
-    <!-- Projections section (mock) -->
     <section class="panel">
       <div class="panel-header">
-        <h2>Playoff Odds (Mock Model)</h2>
+        <h2>Top‑4 & Title Favourite</h2>
         <p>
-          Simple model‑style projections for top‑4 and title probability using
-          example data; later you can calibrate with real points tables. [web:44]
+          Strength scores combine team balance and 2025 points to estimate playoff
+          odds and the most likely champion. [web:55][web:58][web:63][web:66]
         </p>
       </div>
       <table id="projectionsTable">
         <thead>
           <tr>
             <th>Team</th>
-            <th>Pts</th>
-            <th>NRR</th>
+            <th>Strength</th>
             <th>P(Top 4)</th>
             <th>P(Title)</th>
           </tr>
         </thead>
         <tbody></tbody>
       </table>
+      <div id="summary" class="summary-text"></div>
     </section>
   </main>
 
   <footer class="footer">
     <p>
-      Built for IPL 2026 using static data and simple AI‑style scoring. Replace
-      mocked data with real feeds from Cricbuzz / CricÓ for production. [web:4][web:12][web:30]
+      Model uses historical 2025 stats and 2026 squads; all outputs are
+      projections, not official BCCI/IPL data. [web:51][web:52][web:59][web:60][web:65][web:55][web:58][web:63][web:66]
     </p>
   </footer>
 
