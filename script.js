@@ -13,19 +13,37 @@ const teamColors = {
   SRH: "#ff822a"
 };
 
-let modelData = null;
-let currentTeam = "CSK";
+// captains you specified
+const CAPTAINS = {
+  CSK: "Ruturaj Gaikwad",
+  MI: "Hardik Pandya",
+  GT: "Shubman Gill",
+  RCB: "Rajat Patidar",
+  PBKS: "Shreyas Iyer",
+  KKR: "Ajinkya Rahane",
+  RR: "Riyan Parag",
+  LSG: "Rishabh Pant",
+  SRH: "Pat Cummins",
+  DC: "Axar Patel"
+};
 
+// winner modal wiring
 const teamTabsEl = document.getElementById("teamTabs");
-const xiGridEl = document.getElementById("xiGrid");
+const xiListEl = document.getElementById("xiList");
 const impactCardEl = document.getElementById("impactCard");
 const teamTitleEl = document.getElementById("teamTitle");
 const runsTableBody = document.querySelector("#runsTable tbody");
 const wicketsTableBody = document.querySelector("#wicketsTable tbody");
 const projectionsBody = document.querySelector("#projectionsTable tbody");
-const summaryEl = document.getElementById("summary");
+const winnerButton = document.getElementById("winnerButton");
+const winnerModal = document.getElementById("winnerModal");
+const winnerNameEl = document.getElementById("winnerName");
+const closeWinnerBtn = document.getElementById("closeWinner");
 
-async function loadModelOutput() {
+let modelData = null;
+let currentTeam = "CSK";
+
+async function loadModel() {
   const res = await fetch("model_output.json");
   modelData = await res.json();
   initUI();
@@ -34,7 +52,9 @@ async function loadModelOutput() {
 function initUI() {
   renderTeamTabs();
   updateTeam(currentTeam);
-  renderLeaguePredictions();
+  renderCaps();
+  renderProjections();
+  wireWinner();
 }
 
 function renderTeamTabs() {
@@ -60,77 +80,73 @@ function renderTeamTabs() {
 
 function updateTeam(code) {
   if (!modelData) return;
-  const teamBlock = modelData.best12[code];
-  if (!teamBlock) return;
+  const block = modelData.best12[code];
+  if (!block) return;
   teamTitleEl.textContent = `${code} – XI & Impact Player`;
-
-  renderXI(teamBlock.xi);
-  renderImpact(teamBlock.impact);
+  renderXI(code, block.xi);
+  renderImpact(block.impact);
 }
 
-function renderXI(xi) {
-  xiGridEl.innerHTML = "";
-  xi.forEach(p => {
-    const card = document.createElement("div");
-    card.className = "player-card";
+function renderXI(teamCode, xi) {
+  xiListEl.innerHTML = "";
+  const captainName = CAPTAINS[teamCode];
+
+  xi.forEach(player => {
+    const li = document.createElement("li");
+    li.className = "xi-item";
 
     const main = document.createElement("div");
-    main.className = "player-main";
+    main.className = "xi-main";
 
-    const info = document.createElement("div");
-    info.className = "player-info";
-
+    const nameRole = document.createElement("div");
     const nameEl = document.createElement("div");
-    nameEl.className = "player-name";
-    nameEl.textContent = p.name;
-
+    nameEl.className = "xi-name";
+    nameEl.textContent = player.name;
     const roleEl = document.createElement("div");
-    roleEl.className = "player-role";
-    roleEl.textContent = p.description;
+    roleEl.className = "xi-role";
+    roleEl.textContent = player.description || player.role;
+
+    nameRole.appendChild(nameEl);
+    nameRole.appendChild(roleEl);
 
     const tags = document.createElement("div");
-    tags.className = "player-tags";
+    tags.className = "xi-tags";
 
-    const locTag = document.createElement("span");
-    locTag.className = "tag " + (p.overseas ? "overseas" : "indian");
-    locTag.textContent = p.overseas ? "Overseas" : "Indian";
-    tags.appendChild(locTag);
-
-    const typeTag = document.createElement("span");
-    typeTag.className = "tag" + (p.role === "bowler" || p.role === "allrounder" ? " bowler" : "");
-    typeTag.textContent =
-      p.role === "bowler"
-        ? "Bowler"
-        : p.role === "allrounder"
-        ? "All‑rounder"
-        : p.role === "keeper"
-        ? "Keeper"
-        : "Batter";
-    tags.appendChild(typeTag);
-
-    info.appendChild(nameEl);
-    info.appendChild(roleEl);
-    info.appendChild(tags);
+    if (player.name === captainName) {
+      const c = document.createElement("span");
+      c.className = "badge badge-captain";
+      c.textContent = "C";
+      tags.appendChild(c);
+    }
+    if (player.role === "keeper" || /wk/i.test(player.description || "")) {
+      const wk = document.createElement("span");
+      wk.className = "badge badge-wk";
+      wk.textContent = "WK";
+      tags.appendChild(wk);
+    }
+    if (player.overseas) {
+      const o = document.createElement("span");
+      o.className = "badge badge-overseas";
+      o.textContent = "Overseas";
+      tags.appendChild(o);
+    }
 
     const scoreEl = document.createElement("div");
     scoreEl.className = "player-score";
-    scoreEl.textContent = Math.round(p.score * 100);
+    scoreEl.textContent = player.score ? Math.round(player.score * 100) : "";
 
-    main.appendChild(info);
+    main.appendChild(nameRole);
     main.appendChild(scoreEl);
 
-    const meta = document.createElement("div");
-    meta.className = "player-meta";
-    meta.textContent = `Selection score: ${(p.score * 100).toFixed(1)}`;
+    li.appendChild(main);
+    if (tags.childNodes.length) li.appendChild(tags);
 
-    card.appendChild(main);
-    card.appendChild(meta);
-    xiGridEl.appendChild(card);
+    xiListEl.appendChild(li);
   });
 }
 
-function renderImpact(p) {
-  if (!p || !p.name) {
+function renderImpact(impact) {
+  if (!impact || !impact.name) {
     impactCardEl.classList.add("empty");
     impactCardEl.innerHTML = "<p>No impact player available.</p>";
     return;
@@ -140,31 +156,24 @@ function renderImpact(p) {
 
   const label = document.createElement("div");
   label.className = "impact-label";
-  label.textContent = "Impact Player (AI Pick)";
+  label.textContent = "Impact player";
 
   const name = document.createElement("div");
-  name.className = "player-name";
-  name.style.marginTop = "4px";
-  name.textContent = p.name;
-
-  const role = document.createElement("div");
-  role.className = "player-role";
-  role.textContent = p.description;
+  name.className = "impact-name";
+  name.textContent = impact.name;
 
   const meta = document.createElement("div");
-  meta.className = "player-meta";
-  meta.textContent = `Selection score: ${(p.score * 100).toFixed(1)} · ${
-    p.overseas ? "Overseas" : "Indian"
-  } ${p.role}`;
+  meta.className = "impact-meta";
+  meta.textContent = `${impact.description || impact.role} · ${
+    impact.overseas ? "Overseas" : "Indian"
+  }`;
 
   impactCardEl.appendChild(label);
   impactCardEl.appendChild(name);
-  impactCardEl.appendChild(role);
   impactCardEl.appendChild(meta);
 }
 
-function renderLeaguePredictions() {
-  // Top runs
+function renderCaps() {
   runsTableBody.innerHTML = "";
   modelData.top_runs_pred.forEach((row, idx) => {
     const tr = document.createElement("tr");
@@ -177,7 +186,6 @@ function renderLeaguePredictions() {
     runsTableBody.appendChild(tr);
   });
 
-  // Top wickets
   wicketsTableBody.innerHTML = "";
   modelData.top_wkts_pred.forEach((row, idx) => {
     const tr = document.createElement("tr");
@@ -189,8 +197,9 @@ function renderLeaguePredictions() {
     `;
     wicketsTableBody.appendChild(tr);
   });
+}
 
-  // Projections
+function renderProjections() {
   projectionsBody.innerHTML = "";
   modelData.projections.forEach(row => {
     const tr = document.createElement("tr");
@@ -202,10 +211,25 @@ function renderLeaguePredictions() {
     `;
     projectionsBody.appendChild(tr);
   });
-
-  const top4 = modelData.top4_predicted.join(", ");
-  const fav = modelData.title_favourite;
-  summaryEl.textContent = `Projected top‑4: ${top4}. Title favourite: ${fav}.`;
 }
 
-loadModelOutput();
+function wireWinner() {
+  const winnerTeam = modelData.title_favourite;
+  winnerNameEl.textContent = winnerTeam || "N/A";
+
+  winnerButton.addEventListener("click", () => {
+    winnerModal.classList.remove("hidden");
+  });
+
+  closeWinnerBtn.addEventListener("click", () => {
+    winnerModal.classList.add("hidden");
+  });
+
+  winnerModal.addEventListener("click", e => {
+    if (e.target === winnerModal) {
+      winnerModal.classList.add("hidden");
+    }
+  });
+}
+
+loadModel();
