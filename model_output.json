@@ -6,7 +6,7 @@
         {
           "name": "Noor Ahmad",
           "role": "bowler",
-          "description": "Left\u2011arm wrist\u2011spinner",
+          "description": "Left‑arm wrist‑spinner",
           "country": "AFG",
           "overseas": true,
           "score": 0.88
@@ -14,7 +14,7 @@
         {
           "name": "Dewald Brevis",
           "role": "batter",
-          "description": "Aggressive top\u2011order",
+          "description": "Aggressive top‑order",
           "country": "SA",
           "overseas": true,
           "score": 0.76
@@ -22,7 +22,7 @@
         {
           "name": "Jamie Overton",
           "role": "bowler",
-          "description": "Fast bowling all\u2011rounder",
+          "description": "Fast bowling all‑rounder",
           "country": "ENG",
           "overseas": true,
           "score": 0.76
@@ -30,7 +30,7 @@
         {
           "name": "Matt Henry",
           "role": "bowler",
-          "description": "New\u2011ball seamer",
+          "description": "New‑ball seamer",
           "country": "NZ",
           "overseas": true,
           "score": 0.73
@@ -38,7 +38,7 @@
         {
           "name": "Prashant Veer",
           "role": "allrounder",
-          "description": "Big\u2011money all\u2011rounder",
+          "description": "Big‑money all‑rounder",
           "country": "India",
           "overseas": false,
           "score": 0.704
@@ -46,7 +46,7 @@
         {
           "name": "Khaleel Ahmed",
           "role": "bowler",
-          "description": "Left\u2011arm seamer",
+          "description": "Left‑arm seamer",
           "country": "India",
           "overseas": false,
           "score": 0.7
@@ -54,7 +54,7 @@
         {
           "name": "Rahul Chahar",
           "role": "bowler",
-          "description": "Leg\u2011spinner",
+          "description": "Leg‑spinner",
           "country": "India",
           "overseas": false,
           "score": 0.7
@@ -62,23 +62,15 @@
         {
           "name": "Anshul Kamboj",
           "role": "allrounder",
-          "description": "Pace all\u2011rounder",
+          "description": "Pace all‑rounder",
           "country": "India",
           "overseas": false,
           "score": 0.663
         },
         {
-          "name": "Sarfaraz Khan",
-          "role": "batter",
-          "description": "Middle\u2011order batter",
-          "country": "India",
-          "overseas": false,
-          "score": 0.65
-        },
-        {
           "name": "Shivam Dube",
           "role": "allrounder",
-          "description": "Middle\u2011order power\u2011hitter",
+          "description": "Middle‑order power‑hitter",
           "country": "India",
           "overseas": false,
           "score": 0.64
@@ -86,16 +78,24 @@
         {
           "name": "Aman Khan",
           "role": "allrounder",
-          "description": "Pace\u2011all\u2011rounder",
+          "description": "Pace‑all‑rounder",
           "country": "India",
           "overseas": false,
           "score": 0.64
+        },
+        {
+          "name": "MS Dhoni",
+          "role": "keeper",
+          "description": "Legendary wicketkeeper finisher",
+          "country": "India",
+          "overseas": false,
+          "score": 0.8
         }
       ],
       "impact": {
         "name": "Nathan Ellis",
         "role": "bowler",
-        "description": "Death\u2011overs seamer",
+        "description": "Death‑overs seamer",
         "country": "AUS",
         "overseas": true,
         "score": 0.7
@@ -107,7 +107,7 @@
         {
           "name": "Mitchell Starc",
           "role": "bowler",
-          "description": "Left\u2011arm pace spearhead",
+          "description": "Left‑arm pace spearhead",
           "country": "AUS",
           "overseas": true,
           "score": 0.93
@@ -115,7 +115,7 @@
         {
           "name": "T. Natarajan",
           "role": "bowler",
-          "description": "Left\u2011arm yorker specialist",
+          "description": "Left‑arm yorker specialist",
           "country": "India",
           "overseas": false,
           "score": 0.78
@@ -131,7 +131,7 @@
         {
           "name": "Axar Patel",
           "role": "allrounder",
-          "description": "Spin all\u2011rounder",
+          "description": "Spin all‑rounder",
           "country": "India",
           "overseas": false,
           "score": 0.741
@@ -139,7 +139,7 @@
         {
           "name": "David Miller",
           "role": "batter",
-          "description": "Middle\u2011order finisher",
+          "description": "Middle‑order finisher",
           "country": "SA",
           "overseas": true,
           "score": 0.73
@@ -147,7 +147,7 @@
         {
           "name": "KL Rahul",
           "role": "keeper",
-          "description": "Top\u2011order keeper",
+          "description": "Top‑order keeper",
           "country": "India",
           "overseas": false,
           "score": 0.707
@@ -155,7 +155,7 @@
         {
           "name": "Tristan Stubbs",
           "role": "batter",
-          "description": "Middle\u2011order finisher",
+          "description": "Middle‑order finisher",
           "country": "SA",
           "overseas": true,
           "score": 0.7
@@ -163,7 +163,7 @@
         {
           "name": "Pathum Nissanka",
           "role": "batter",
-          "description": "Top\u2011order anchor",
+          "description": "Top‑order anchor",
           "country": "SL",
           "overseas": true,
           "score": 0.7
@@ -171,7 +171,7 @@
         {
           "name": "Nitish Rana",
           "role": "batter",
-          "description": "Top\u2011order bat",
+          "description": "Top‑order bat",
           "country": "India",
           "overseas": false,
           "score": 0.68
@@ -196,7 +196,7 @@
       "impact": {
         "name": "Dushmantha Chameera",
         "role": "bowler",
-        "description": "Right\u2011arm pace",
+        "description": "Right‑arm pace",
         "country": "SL",
         "overseas": true,
         "score": 0.68
@@ -208,7 +208,7 @@
         {
           "name": "Sai Sudharsan",
           "role": "batter",
-          "description": "Top\u2011order run\u2011machine",
+          "description": "Top‑order run‑machine",
           "country": "India",
           "overseas": false,
           "score": 1.0
@@ -224,15 +224,15 @@
         {
           "name": "Rashid Khan",
           "role": "bowler",
-          "description": "World\u2011class spinner",
+          "description": "World‑class spinner",
           "country": "AFG",
           "overseas": true,
-          "score": 0.91
+          "score": 0.93
         },
         {
           "name": "Shubman Gill",
           "role": "batter",
-          "description": "Top\u2011order anchor",
+          "description": "Top‑order anchor",
           "country": "India",
           "overseas": false,
           "score": 0.9
@@ -256,23 +256,15 @@
         {
           "name": "Jason Holder",
           "role": "allrounder",
-          "description": "Pace all\u2011rounder",
+          "description": "Pace all‑rounder",
           "country": "WI",
           "overseas": true,
           "score": 0.729
         },
         {
-          "name": "Shahrukh Khan",
-          "role": "batter",
-          "description": "Finisher",
-          "country": "India",
-          "overseas": false,
-          "score": 0.7
-        },
-        {
           "name": "Washington Sundar",
           "role": "allrounder",
-          "description": "Spin all\u2011rounder",
+          "description": "Spin all‑rounder",
           "country": "India",
           "overseas": false,
           "score": 0.696
@@ -280,7 +272,7 @@
         {
           "name": "Glenn Phillips",
           "role": "allrounder",
-          "description": "Middle\u2011order all\u2011rounder",
+          "description": "Middle‑order all‑rounder",
           "country": "NZ",
           "overseas": true,
           "score": 0.695
@@ -288,16 +280,24 @@
         {
           "name": "Rahul Tewatia",
           "role": "allrounder",
-          "description": "Finisher all\u2011rounder",
+          "description": "Finisher all‑rounder",
           "country": "India",
           "overseas": false,
           "score": 0.684
+        },
+        {
+          "name": "Jos Buttler",
+          "role": "keeper",
+          "description": "Explosive opener",
+          "country": "ENG",
+          "overseas": true,
+          "score": 0.9
         }
       ],
       "impact": {
         "name": "Sai Kishore",
         "role": "bowler",
-        "description": "Left\u2011arm spinner",
+        "description": "Left‑arm spinner",
         "country": "India",
         "overseas": false,
         "score": 0.68
@@ -309,7 +309,7 @@
         {
           "name": "Matheesha Pathirana",
           "role": "bowler",
-          "description": "Death\u2011overs quick",
+          "description": "Death‑overs quick",
           "country": "SL",
           "overseas": true,
           "score": 0.88
@@ -325,7 +325,7 @@
         {
           "name": "Sunil Narine",
           "role": "allrounder",
-          "description": "Mystery spin all\u2011rounder",
+          "description": "Mystery spin all‑rounder",
           "country": "WI",
           "overseas": true,
           "score": 0.788
@@ -333,7 +333,7 @@
         {
           "name": "Cameron Green",
           "role": "allrounder",
-          "description": "Pace all\u2011rounder",
+          "description": "Pace all‑rounder",
           "country": "AUS",
           "overseas": true,
           "score": 0.787
@@ -349,7 +349,7 @@
         {
           "name": "Rachin Ravindra",
           "role": "allrounder",
-          "description": "Batting all\u2011rounder",
+          "description": "Batting all‑rounder",
           "country": "NZ",
           "overseas": true,
           "score": 0.731
@@ -373,7 +373,7 @@
         {
           "name": "Rahul Tripathi",
           "role": "batter",
-          "description": "Top\u2011order",
+          "description": "Top‑order",
           "country": "India",
           "overseas": false,
           "score": 0.68
@@ -398,7 +398,7 @@
       "impact": {
         "name": "Rovman Powell",
         "role": "allrounder",
-        "description": "Power\u2011hitting all\u2011rounder",
+        "description": "Power‑hitting all‑rounder",
         "country": "WI",
         "overseas": true,
         "score": 0.695
@@ -418,7 +418,7 @@
         {
           "name": "Mitchell Marsh",
           "role": "batter",
-          "description": "Top\u2011order power\u2011hitter",
+          "description": "Top‑order power‑hitter",
           "country": "AUS",
           "overseas": true,
           "score": 0.86
@@ -434,7 +434,7 @@
         {
           "name": "Wanindu Hasaranga",
           "role": "allrounder",
-          "description": "Leg\u2011spin all\u2011rounder",
+          "description": "Leg‑spin all‑rounder",
           "country": "SL",
           "overseas": true,
           "score": 0.81
@@ -450,7 +450,7 @@
         {
           "name": "Ayush Badoni",
           "role": "allrounder",
-          "description": "Middle\u2011order all\u2011rounder",
+          "description": "Middle‑order all‑rounder",
           "country": "India",
           "overseas": false,
           "score": 0.718
@@ -466,7 +466,7 @@
         {
           "name": "Rishabh Pant",
           "role": "keeper",
-          "description": "Top\u2011order keeper",
+          "description": "Top‑order keeper",
           "country": "India",
           "overseas": false,
           "score": 0.693
@@ -474,7 +474,7 @@
         {
           "name": "Abdul Samad",
           "role": "batter",
-          "description": "Power\u2011hitter",
+          "description": "Power‑hitter",
           "country": "India",
           "overseas": false,
           "score": 0.68
@@ -482,7 +482,7 @@
         {
           "name": "Mohsin Khan",
           "role": "bowler",
-          "description": "Left\u2011arm seamer",
+          "description": "Left‑arm seamer",
           "country": "India",
           "overseas": false,
           "score": 0.68
@@ -490,7 +490,7 @@
         {
           "name": "Aiden Markram",
           "role": "batter",
-          "description": "Top\u2011order",
+          "description": "Top‑order",
           "country": "SA",
           "overseas": true,
           "score": 0.68
@@ -499,7 +499,7 @@
       "impact": {
         "name": "Nicholas Pooran",
         "role": "keeper",
-        "description": "Middle\u2011order keeper",
+        "description": "Middle‑order keeper",
         "country": "WI",
         "overseas": true,
         "score": 0.673
@@ -511,7 +511,7 @@
         {
           "name": "Suryakumar Yadav",
           "role": "batter",
-          "description": "Middle\u2011order",
+          "description": "Middle‑order",
           "country": "India",
           "overseas": false,
           "score": 0.95
@@ -519,7 +519,7 @@
         {
           "name": "Jasprit Bumrah",
           "role": "bowler",
-          "description": "World\u2011class seamer",
+          "description": "World‑class seamer",
           "country": "India",
           "overseas": false,
           "score": 0.93
@@ -527,7 +527,7 @@
         {
           "name": "Trent Boult",
           "role": "bowler",
-          "description": "Left\u2011arm swing",
+          "description": "Left‑arm swing",
           "country": "NZ",
           "overseas": true,
           "score": 0.84
@@ -535,7 +535,7 @@
         {
           "name": "Tilak Varma",
           "role": "batter",
-          "description": "Middle\u2011order",
+          "description": "Middle‑order",
           "country": "India",
           "overseas": false,
           "score": 0.82
@@ -543,7 +543,7 @@
         {
           "name": "Hardik Pandya",
           "role": "allrounder",
-          "description": "Seam all\u2011rounder",
+          "description": "Seam all‑rounder",
           "country": "India",
           "overseas": false,
           "score": 0.813
@@ -551,7 +551,7 @@
         {
           "name": "Shardul Thakur",
           "role": "allrounder",
-          "description": "Seam all\u2011rounder",
+          "description": "Seam all‑rounder",
           "country": "India",
           "overseas": false,
           "score": 0.718
@@ -559,7 +559,7 @@
         {
           "name": "Mitchell Santner",
           "role": "allrounder",
-          "description": "Spin all\u2011rounder",
+          "description": "Spin all‑rounder",
           "country": "NZ",
           "overseas": true,
           "score": 0.71
@@ -575,7 +575,7 @@
         {
           "name": "Deepak Chahar",
           "role": "bowler",
-          "description": "New\u2011ball seamer",
+          "description": "New‑ball seamer",
           "country": "India",
           "overseas": false,
           "score": 0.7
@@ -583,7 +583,7 @@
         {
           "name": "Will Jacks",
           "role": "allrounder",
-          "description": "Batting all\u2011rounder",
+          "description": "Batting all‑rounder",
           "country": "AUS",
           "overseas": true,
           "score": 0.698
@@ -591,7 +591,7 @@
         {
           "name": "Mayank Markande",
           "role": "bowler",
-          "description": "Leg\u2011spinner",
+          "description": "Leg‑spinner",
           "country": "India",
           "overseas": false,
           "score": 0.68
@@ -600,7 +600,7 @@
       "impact": {
         "name": "Sherfane Rutherford",
         "role": "batter",
-        "description": "All\u2011round finisher",
+        "description": "All‑round finisher",
         "country": "WI",
         "overseas": true,
         "score": 0.68
@@ -612,7 +612,7 @@
         {
           "name": "Shashank Singh",
           "role": "batter",
-          "description": "Middle\u2011order finisher",
+          "description": "Middle‑order finisher",
           "country": "India",
           "overseas": false,
           "score": 0.9
@@ -620,7 +620,7 @@
         {
           "name": "Yuzvendra Chahal",
           "role": "bowler",
-          "description": "Leg\u2011spinner",
+          "description": "Leg‑spinner",
           "country": "India",
           "overseas": false,
           "score": 0.9
@@ -628,7 +628,7 @@
         {
           "name": "Arshdeep Singh",
           "role": "bowler",
-          "description": "Left\u2011arm seamer",
+          "description": "Left‑arm seamer",
           "country": "India",
           "overseas": false,
           "score": 0.88
@@ -636,7 +636,7 @@
         {
           "name": "Marcus Stoinis",
           "role": "allrounder",
-          "description": "Pace all\u2011rounder",
+          "description": "Pace all‑rounder",
           "country": "AUS",
           "overseas": true,
           "score": 0.731
@@ -644,7 +644,7 @@
         {
           "name": "Marco Jansen",
           "role": "allrounder",
-          "description": "Tall pace all\u2011rounder",
+          "description": "Tall pace all‑rounder",
           "country": "SA",
           "overseas": true,
           "score": 0.718
@@ -652,7 +652,7 @@
         {
           "name": "Azmatullah Omarzai",
           "role": "allrounder",
-          "description": "Pace all\u2011rounder",
+          "description": "Pace all‑rounder",
           "country": "AFG",
           "overseas": true,
           "score": 0.718
@@ -660,7 +660,7 @@
         {
           "name": "Shreyas Iyer",
           "role": "batter",
-          "description": "Top\u2011order",
+          "description": "Top‑order",
           "country": "India",
           "overseas": false,
           "score": 0.7
@@ -676,7 +676,7 @@
         {
           "name": "Harpreet Brar",
           "role": "allrounder",
-          "description": "Spin all\u2011rounder",
+          "description": "Spin all‑rounder",
           "country": "India",
           "overseas": false,
           "score": 0.696
@@ -684,7 +684,7 @@
         {
           "name": "Musheer Khan",
           "role": "allrounder",
-          "description": "Batting all\u2011rounder",
+          "description": "Batting all‑rounder",
           "country": "India",
           "overseas": false,
           "score": 0.651
@@ -692,7 +692,7 @@
         {
           "name": "Priyansh Arya",
           "role": "allrounder",
-          "description": "All\u2011rounder",
+          "description": "All‑rounder",
           "country": "India",
           "overseas": false,
           "score": 0.64
@@ -713,7 +713,7 @@
         {
           "name": "Ravi Bishnoi",
           "role": "bowler",
-          "description": "Leg\u2011spinner",
+          "description": "Leg‑spinner",
           "country": "India",
           "overseas": false,
           "score": 0.88
@@ -721,7 +721,7 @@
         {
           "name": "Ravindra Jadeja",
           "role": "allrounder",
-          "description": "World\u2011class all\u2011rounder",
+          "description": "World‑class all‑rounder",
           "country": "India",
           "overseas": false,
           "score": 0.856
@@ -745,7 +745,7 @@
         {
           "name": "Sam Curran",
           "role": "allrounder",
-          "description": "Pace all\u2011rounder",
+          "description": "Pace all‑rounder",
           "country": "ENG",
           "overseas": true,
           "score": 0.743
@@ -761,7 +761,7 @@
         {
           "name": "Riyan Parag",
           "role": "batter",
-          "description": "Middle\u2011order",
+          "description": "Middle‑order",
           "country": "India",
           "overseas": false,
           "score": 0.7
@@ -793,7 +793,7 @@
         {
           "name": "Kwena Maphaka",
           "role": "bowler",
-          "description": "Left\u2011arm seamer",
+          "description": "Left‑arm seamer",
           "country": "SA",
           "overseas": true,
           "score": 0.68
@@ -802,7 +802,7 @@
       "impact": {
         "name": "Nandre Burger",
         "role": "bowler",
-        "description": "Left\u2011arm seamer",
+        "description": "Left‑arm seamer",
         "country": "SA",
         "overseas": true,
         "score": 0.68
@@ -814,7 +814,7 @@
         {
           "name": "Virat Kohli",
           "role": "batter",
-          "description": "Top\u2011order run\u2011machine",
+          "description": "Top‑order run‑machine",
           "country": "India",
           "overseas": false,
           "score": 0.92
@@ -822,7 +822,7 @@
         {
           "name": "Yash Dayal",
           "role": "bowler",
-          "description": "Left\u2011arm seamer",
+          "description": "Left‑arm seamer",
           "country": "India",
           "overseas": false,
           "score": 0.9
@@ -846,7 +846,7 @@
         {
           "name": "Krunal Pandya",
           "role": "allrounder",
-          "description": "Spin all\u2011rounder",
+          "description": "Spin all‑rounder",
           "country": "India",
           "overseas": false,
           "score": 0.727
@@ -854,7 +854,7 @@
         {
           "name": "Romario Shepherd",
           "role": "allrounder",
-          "description": "Power all\u2011rounder",
+          "description": "Power all‑rounder",
           "country": "WI",
           "overseas": true,
           "score": 0.709
@@ -862,7 +862,7 @@
         {
           "name": "Rajat Patidar",
           "role": "batter",
-          "description": "Top\u2011order",
+          "description": "Top‑order",
           "country": "India",
           "overseas": false,
           "score": 0.7
@@ -870,7 +870,7 @@
         {
           "name": "Devdutt Padikkal",
           "role": "batter",
-          "description": "Top\u2011order",
+          "description": "Top‑order",
           "country": "India",
           "overseas": false,
           "score": 0.7
@@ -878,7 +878,7 @@
         {
           "name": "Venkatesh Iyer",
           "role": "allrounder",
-          "description": "Batting all\u2011rounder",
+          "description": "Batting all‑rounder",
           "country": "India",
           "overseas": false,
           "score": 0.695
@@ -886,7 +886,7 @@
         {
           "name": "Suyash Sharma",
           "role": "bowler",
-          "description": "Leg\u2011spinner",
+          "description": "Leg‑spinner",
           "country": "India",
           "overseas": false,
           "score": 0.68
@@ -903,7 +903,7 @@
       "impact": {
         "name": "Tim David",
         "role": "allrounder",
-        "description": "Power\u2011hitting all\u2011rounder",
+        "description": "Power‑hitting all‑rounder",
         "country": "AUS",
         "overseas": true,
         "score": 0.675
@@ -931,7 +931,7 @@
         {
           "name": "Abhishek Sharma",
           "role": "allrounder",
-          "description": "Top\u2011order all\u2011rounder",
+          "description": "Top‑order all‑rounder",
           "country": "India",
           "overseas": false,
           "score": 0.828
@@ -947,7 +947,7 @@
         {
           "name": "Harshal Patel",
           "role": "allrounder",
-          "description": "Seam all\u2011rounder",
+          "description": "Seam all‑rounder",
           "country": "India",
           "overseas": false,
           "score": 0.754
@@ -955,7 +955,7 @@
         {
           "name": "Liam Livingstone",
           "role": "allrounder",
-          "description": "Batting all\u2011rounder",
+          "description": "Batting all‑rounder",
           "country": "ENG",
           "overseas": true,
           "score": 0.753
@@ -963,7 +963,7 @@
         {
           "name": "Nitish Kumar Reddy",
           "role": "allrounder",
-          "description": "All\u2011rounder",
+          "description": "All‑rounder",
           "country": "India",
           "overseas": false,
           "score": 0.731
@@ -979,7 +979,7 @@
         {
           "name": "Jaydev Unadkat",
           "role": "bowler",
-          "description": "Left\u2011arm seamer",
+          "description": "Left‑arm seamer",
           "country": "India",
           "overseas": false,
           "score": 0.68
@@ -987,7 +987,7 @@
         {
           "name": "Harsh Dubey",
           "role": "allrounder",
-          "description": "All\u2011rounder",
+          "description": "All‑rounder",
           "country": "India",
           "overseas": false,
           "score": 0.64
@@ -995,7 +995,7 @@
         {
           "name": "Shivang Kumar",
           "role": "allrounder",
-          "description": "All\u2011rounder",
+          "description": "All‑rounder",
           "country": "India",
           "overseas": false,
           "score": 0.64
@@ -1004,7 +1004,7 @@
       "impact": {
         "name": "Kamindu Mendis",
         "role": "allrounder",
-        "description": "All\u2011rounder",
+        "description": "All‑rounder",
         "country": "SL",
         "overseas": true,
         "score": 0.689
