@@ -4,118 +4,477 @@
       "team": "CSK",
       "xi": [
         {
-          "name": "Noor Ahmad",
-          "role": "bowler",
-          "description": "Left‑arm wrist‑spinner",
-          "country": "AFG",
-          "overseas": true,
+          "name": "Ruturaj Gaikwad",
+          "role": "batter",
+          "description": "Opener (captain)",
+          "country": "India",
+          "overseas": false,
           "score": 0.88
+        },
+        {
+          "name": "Sanju Samson",
+          "role": "batter",
+          "description": "Top-order batter",
+          "country": "India",
+          "overseas": false,
+          "score": 0.9
         },
         {
           "name": "Dewald Brevis",
           "role": "batter",
-          "description": "Aggressive top‑order",
+          "description": "Top-order aggressor",
           "country": "SA",
           "overseas": true,
-          "score": 0.76
-        },
-        {
-          "name": "Jamie Overton",
-          "role": "bowler",
-          "description": "Fast bowling all‑rounder",
-          "country": "ENG",
-          "overseas": true,
-          "score": 0.76
-        },
-        {
-          "name": "Matt Henry",
-          "role": "bowler",
-          "description": "New‑ball seamer",
-          "country": "NZ",
-          "overseas": true,
-          "score": 0.73
-        },
-        {
-          "name": "Prashant Veer",
-          "role": "allrounder",
-          "description": "Big‑money all‑rounder",
-          "country": "India",
-          "overseas": false,
-          "score": 0.704
-        },
-        {
-          "name": "Khaleel Ahmed",
-          "role": "bowler",
-          "description": "Left‑arm seamer",
-          "country": "India",
-          "overseas": false,
-          "score": 0.7
-        },
-        {
-          "name": "Rahul Chahar",
-          "role": "bowler",
-          "description": "Leg‑spinner",
-          "country": "India",
-          "overseas": false,
-          "score": 0.7
-        },
-        {
-          "name": "Anshul Kamboj",
-          "role": "allrounder",
-          "description": "Pace all‑rounder",
-          "country": "India",
-          "overseas": false,
-          "score": 0.663
-        },
-        {
-          "name": "Shivam Dube",
-          "role": "allrounder",
-          "description": "Middle‑order power‑hitter",
-          "country": "India",
-          "overseas": false,
-          "score": 0.64
-        },
-        {
-          "name": "Aman Khan",
-          "role": "allrounder",
-          "description": "Pace‑all‑rounder",
-          "country": "India",
-          "overseas": false,
-          "score": 0.64
+          "score": 0.85
         },
         {
           "name": "MS Dhoni",
           "role": "keeper",
-          "description": "Legendary wicketkeeper finisher",
+          "description": "Wicketkeeper finisher",
+          "country": "India",
+          "overseas": false,
+          "score": 0.8
+        },
+        {
+          "name": "Shivam Dube",
+          "role": "allrounder",
+          "description": "Middle-order power-hitter",
+          "country": "India",
+          "overseas": false,
+          "score": 0.9
+        },
+        {
+          "name": "Prashant Veer",
+          "role": "allrounder",
+          "description": "Batting all-rounder",
+          "country": "India",
+          "overseas": false,
+          "score": 0.78
+        },
+        {
+          "name": "Kartik Sharma",
+          "role": "keeper",
+          "description": "Reserve keeper-batter",
+          "country": "India",
+          "overseas": false,
+          "score": 0.72
+        },
+        {
+          "name": "Akeal Hosein",
+          "role": "bowler",
+          "description": "Left-arm spinner",
+          "country": "WI",
+          "overseas": true,
+          "score": 0.82
+        },
+        {
+          "name": "Nathan Ellis",
+          "role": "bowler",
+          "description": "Death-overs seamer",
+          "country": "AUS",
+          "overseas": true,
+          "score": 0.83
+        },
+        {
+          "name": "Rahul Chahar",
+          "role": "bowler",
+          "description": "Leg-spinner",
+          "country": "India",
+          "overseas": false,
+          "score": 0.82
+        },
+        {
+          "name": "Khaleel Ahmed",
+          "role": "bowler",
+          "description": "Left-arm seamer",
           "country": "India",
           "overseas": false,
           "score": 0.8
         }
       ],
       "impact": {
-        "name": "Nathan Ellis",
+        "name": "Noor Ahmad",
         "role": "bowler",
-        "description": "Death‑overs seamer",
-        "country": "AUS",
+        "description": "Impact wrist-spinner",
+        "country": "AFG",
         "overseas": true,
-        "score": 0.7
+        "score": 0.9
+      }
+    },
+    "RCB": {
+      "team": "RCB",
+      "xi": [
+        {
+          "name": "Virat Kohli",
+          "role": "batter",
+          "description": "Top-order batter",
+          "country": "India",
+          "overseas": false,
+          "score": 0.96
+        },
+        {
+          "name": "Phil Salt",
+          "role": "keeper",
+          "description": "Aggressive opener (wk)",
+          "country": "ENG",
+          "overseas": true,
+          "score": 0.9
+        },
+        {
+          "name": "Venkatesh Iyer",
+          "role": "allrounder",
+          "description": "Top-order all-rounder",
+          "country": "India",
+          "overseas": false,
+          "score": 0.82
+        },
+        {
+          "name": "Rajat Patidar",
+          "role": "batter",
+          "description": "Top-order (captain)",
+          "country": "India",
+          "overseas": false,
+          "score": 0.84
+        },
+        {
+          "name": "Jitesh Sharma",
+          "role": "keeper",
+          "description": "Middle-order finisher",
+          "country": "India",
+          "overseas": false,
+          "score": 0.84
+        },
+        {
+          "name": "Tim David",
+          "role": "allrounder",
+          "description": "Power finisher",
+          "country": "AUS",
+          "overseas": true,
+          "score": 0.86
+        },
+        {
+          "name": "Romario Shepherd",
+          "role": "allrounder",
+          "description": "Pace all-rounder",
+          "country": "WI",
+          "overseas": true,
+          "score": 0.8
+        },
+        {
+          "name": "Krunal Pandya",
+          "role": "allrounder",
+          "description": "Spin all-rounder",
+          "country": "India",
+          "overseas": false,
+          "score": 0.82
+        },
+        {
+          "name": "Bhuvneshwar Kumar",
+          "role": "bowler",
+          "description": "Swing bowler",
+          "country": "India",
+          "overseas": false,
+          "score": 0.9
+        },
+        {
+          "name": "Suyash Sharma",
+          "role": "bowler",
+          "description": "Leg-spinner",
+          "country": "India",
+          "overseas": false,
+          "score": 0.8
+        },
+        {
+          "name": "Josh Hazlewood",
+          "role": "bowler",
+          "description": "Strike seamer",
+          "country": "AUS",
+          "overseas": true,
+          "score": 0.92
+        }
+      ],
+      "impact": {
+        "name": "Yash Dayal",
+        "role": "bowler",
+        "description": "Impact left-arm seamer",
+        "country": "India",
+        "overseas": false,
+        "score": 0.9
+      }
+    },
+    "KKR": {
+      "team": "KKR",
+      "xi": [
+        {
+          "name": "Finn Allen",
+          "role": "keeper",
+          "description": "Opener (wk)",
+          "country": "NZ",
+          "overseas": true,
+          "score": 0.86
+        },
+        {
+          "name": "Ajinkya Rahane",
+          "role": "batter",
+          "description": "Top-order (captain)",
+          "country": "India",
+          "overseas": false,
+          "score": 0.8
+        },
+        {
+          "name": "Angkrish Raghuvanshi",
+          "role": "batter",
+          "description": "Top-order",
+          "country": "India",
+          "overseas": false,
+          "score": 0.8
+        },
+        {
+          "name": "Cameron Green",
+          "role": "allrounder",
+          "description": "Batting all-rounder",
+          "country": "AUS",
+          "overseas": true,
+          "score": 0.87
+        },
+        {
+          "name": "Rahul Tripathi",
+          "role": "batter",
+          "description": "Top-order",
+          "country": "India",
+          "overseas": false,
+          "score": 0.82
+        },
+        {
+          "name": "Rinku Singh",
+          "role": "batter",
+          "description": "Finisher",
+          "country": "India",
+          "overseas": false,
+          "score": 0.9
+        },
+        {
+          "name": "Ramandeep Singh",
+          "role": "batter",
+          "description": "Middle-order",
+          "country": "India",
+          "overseas": false,
+          "score": 0.8
+        },
+        {
+          "name": "Sunil Narine",
+          "role": "allrounder",
+          "description": "Mystery spin all-rounder",
+          "country": "WI",
+          "overseas": true,
+          "score": 0.9
+        },
+        {
+          "name": "Harshit Rana",
+          "role": "bowler",
+          "description": "Pacer",
+          "country": "India",
+          "overseas": false,
+          "score": 0.78
+        },
+        {
+          "name": "Vaibhav Arora",
+          "role": "bowler",
+          "description": "Seamer",
+          "country": "India",
+          "overseas": false,
+          "score": 0.75
+        },
+        {
+          "name": "Matheesha Pathirana",
+          "role": "bowler",
+          "description": "Death-overs quick",
+          "country": "SL",
+          "overseas": true,
+          "score": 0.9
+        }
+      ],
+      "impact": {
+        "name": "Varun Chakravarthy",
+        "role": "bowler",
+        "description": "Impact mystery spinner",
+        "country": "India",
+        "overseas": false,
+        "score": 0.9
+      }
+    },
+    "LSG": {
+      "team": "LSG",
+      "xi": [
+        {
+          "name": "Mitchell Marsh",
+          "role": "allrounder",
+          "description": "Top-order power-hitter",
+          "country": "AUS",
+          "overseas": true,
+          "score": 0.9
+        },
+        {
+          "name": "Aiden Markram",
+          "role": "batter",
+          "description": "Top-order batter",
+          "country": "SA",
+          "overseas": true,
+          "score": 0.86
+        },
+        {
+          "name": "Nicholas Pooran",
+          "role": "keeper",
+          "description": "Middle-order (wk)",
+          "country": "WI",
+          "overseas": true,
+          "score": 0.93
+        },
+        {
+          "name": "Rishabh Pant",
+          "role": "keeper",
+          "description": "Top-order (captain & wk)",
+          "country": "India",
+          "overseas": false,
+          "score": 0.92
+        },
+        {
+          "name": "Ayush Badoni",
+          "role": "allrounder",
+          "description": "Middle-order all-rounder",
+          "country": "India",
+          "overseas": false,
+          "score": 0.8
+        },
+        {
+          "name": "Abdul Samad",
+          "role": "batter",
+          "description": "Finisher",
+          "country": "India",
+          "overseas": false,
+          "score": 0.82
+        },
+        {
+          "name": "Wanindu Hasaranga",
+          "role": "allrounder",
+          "description": "Leg-spin all-rounder",
+          "country": "SL",
+          "overseas": true,
+          "score": 0.92
+        },
+        {
+          "name": "Shahbaz Ahmed",
+          "role": "allrounder",
+          "description": "Spin all-rounder",
+          "country": "India",
+          "overseas": false,
+          "score": 0.8
+        },
+        {
+          "name": "Avesh Khan",
+          "role": "bowler",
+          "description": "Pace bowler",
+          "country": "India",
+          "overseas": false,
+          "score": 0.82
+        },
+        {
+          "name": "Mohammed Shami",
+          "role": "bowler",
+          "description": "Strike fast bowler",
+          "country": "India",
+          "overseas": false,
+          "score": 0.9
+        },
+        {
+          "name": "Mayank Yadav",
+          "role": "bowler",
+          "description": "Extreme pace bowler",
+          "country": "India",
+          "overseas": false,
+          "score": 0.9
+        }
+      ],
+      "impact": {
+        "name": "Mohsin Khan",
+        "role": "bowler",
+        "description": "Impact left-arm seamer",
+        "country": "India",
+        "overseas": false,
+        "score": 0.8
       }
     },
     "DC": {
       "team": "DC",
       "xi": [
         {
-          "name": "Mitchell Starc",
-          "role": "bowler",
-          "description": "Left‑arm pace spearhead",
-          "country": "AUS",
-          "overseas": true,
-          "score": 0.93
+          "name": "KL Rahul",
+          "role": "keeper",
+          "description": "Top-order (wk)",
+          "country": "India",
+          "overseas": false,
+          "score": 0.9
         },
         {
-          "name": "T. Natarajan",
-          "role": "bowler",
-          "description": "Left‑arm yorker specialist",
+          "name": "Ben Duckett",
+          "role": "keeper",
+          "description": "Top-order left-hander",
+          "country": "ENG",
+          "overseas": true,
+          "score": 0.86
+        },
+        {
+          "name": "Nitish Rana",
+          "role": "batter",
+          "description": "Top-order batter",
+          "country": "India",
+          "overseas": false,
+          "score": 0.86
+        },
+        {
+          "name": "Tristan Stubbs",
+          "role": "batter",
+          "description": "Middle-order finisher",
+          "country": "SA",
+          "overseas": true,
+          "score": 0.88
+        },
+        {
+          "name": "Axar Patel",
+          "role": "allrounder",
+          "description": "Spin all-rounder (captain)",
+          "country": "India",
+          "overseas": false,
+          "score": 0.86
+        },
+        {
+          "name": "David Miller",
+          "role": "batter",
+          "description": "Finisher",
+          "country": "SA",
+          "overseas": true,
+          "score": 0.88
+        },
+        {
+          "name": "Ashutosh Sharma",
+          "role": "batter",
+          "description": "Finisher",
+          "country": "India",
+          "overseas": false,
+          "score": 0.84
+        },
+        {
+          "name": "Vipraj Nigam",
+          "role": "allrounder",
+          "description": "All-rounder",
+          "country": "India",
+          "overseas": false,
+          "score": 0.76
+        },
+        {
+          "name": "Auqib Nabi",
+          "role": "allrounder",
+          "description": "Seam all-rounder",
           "country": "India",
           "overseas": false,
           "score": 0.78
@@ -126,847 +485,100 @@
           "description": "Chinaman spinner",
           "country": "India",
           "overseas": false,
-          "score": 0.78
-        },
-        {
-          "name": "Axar Patel",
-          "role": "allrounder",
-          "description": "Spin all‑rounder",
-          "country": "India",
-          "overseas": false,
-          "score": 0.741
-        },
-        {
-          "name": "David Miller",
-          "role": "batter",
-          "description": "Middle‑order finisher",
-          "country": "SA",
-          "overseas": true,
-          "score": 0.73
-        },
-        {
-          "name": "KL Rahul",
-          "role": "keeper",
-          "description": "Top‑order keeper",
-          "country": "India",
-          "overseas": false,
-          "score": 0.707
-        },
-        {
-          "name": "Tristan Stubbs",
-          "role": "batter",
-          "description": "Middle‑order finisher",
-          "country": "SA",
-          "overseas": true,
-          "score": 0.7
-        },
-        {
-          "name": "Pathum Nissanka",
-          "role": "batter",
-          "description": "Top‑order anchor",
-          "country": "SL",
-          "overseas": true,
-          "score": 0.7
-        },
-        {
-          "name": "Nitish Rana",
-          "role": "batter",
-          "description": "Top‑order bat",
-          "country": "India",
-          "overseas": false,
-          "score": 0.68
-        },
-        {
-          "name": "Ashutosh Sharma",
-          "role": "batter",
-          "description": "Finisher",
-          "country": "India",
-          "overseas": false,
-          "score": 0.65
-        },
-        {
-          "name": "Mukesh Kumar",
-          "role": "bowler",
-          "description": "Seamer",
-          "country": "India",
-          "overseas": false,
-          "score": 0.65
-        }
-      ],
-      "impact": {
-        "name": "Dushmantha Chameera",
-        "role": "bowler",
-        "description": "Right‑arm pace",
-        "country": "SL",
-        "overseas": true,
-        "score": 0.68
-      }
-    },
-    "GT": {
-      "team": "GT",
-      "xi": [
-        {
-          "name": "Sai Sudharsan",
-          "role": "batter",
-          "description": "Top‑order run‑machine",
-          "country": "India",
-          "overseas": false,
-          "score": 1.0
-        },
-        {
-          "name": "Prasidh Krishna",
-          "role": "bowler",
-          "description": "Fast bowler",
-          "country": "India",
-          "overseas": false,
           "score": 0.92
         },
         {
-          "name": "Rashid Khan",
+          "name": "Mitchell Starc",
           "role": "bowler",
-          "description": "World‑class spinner",
-          "country": "AFG",
+          "description": "Left-arm fast bowler",
+          "country": "AUS",
           "overseas": true,
           "score": 0.93
-        },
-        {
-          "name": "Shubman Gill",
-          "role": "batter",
-          "description": "Top‑order anchor",
-          "country": "India",
-          "overseas": false,
-          "score": 0.9
-        },
-        {
-          "name": "Mohammed Siraj",
-          "role": "bowler",
-          "description": "Fast bowler",
-          "country": "India",
-          "overseas": false,
-          "score": 0.9
-        },
-        {
-          "name": "Kagiso Rabada",
-          "role": "bowler",
-          "description": "Strike fast bowler",
-          "country": "SA",
-          "overseas": true,
-          "score": 0.88
-        },
-        {
-          "name": "Jason Holder",
-          "role": "allrounder",
-          "description": "Pace all‑rounder",
-          "country": "WI",
-          "overseas": true,
-          "score": 0.729
-        },
-        {
-          "name": "Washington Sundar",
-          "role": "allrounder",
-          "description": "Spin all‑rounder",
-          "country": "India",
-          "overseas": false,
-          "score": 0.696
-        },
-        {
-          "name": "Glenn Phillips",
-          "role": "allrounder",
-          "description": "Middle‑order all‑rounder",
-          "country": "NZ",
-          "overseas": true,
-          "score": 0.695
-        },
-        {
-          "name": "Rahul Tewatia",
-          "role": "allrounder",
-          "description": "Finisher all‑rounder",
-          "country": "India",
-          "overseas": false,
-          "score": 0.684
-        },
-        {
-          "name": "Jos Buttler",
-          "role": "keeper",
-          "description": "Explosive opener",
-          "country": "ENG",
-          "overseas": true,
-          "score": 0.9
         }
       ],
       "impact": {
-        "name": "Sai Kishore",
+        "name": "T. Natarajan",
         "role": "bowler",
-        "description": "Left‑arm spinner",
+        "description": "Impact yorker specialist",
         "country": "India",
         "overseas": false,
-        "score": 0.68
-      }
-    },
-    "KKR": {
-      "team": "KKR",
-      "xi": [
-        {
-          "name": "Matheesha Pathirana",
-          "role": "bowler",
-          "description": "Death‑overs quick",
-          "country": "SL",
-          "overseas": true,
-          "score": 0.88
-        },
-        {
-          "name": "Varun Chakaravarthy",
-          "role": "bowler",
-          "description": "Mystery spinner",
-          "country": "India",
-          "overseas": false,
-          "score": 0.8
-        },
-        {
-          "name": "Sunil Narine",
-          "role": "allrounder",
-          "description": "Mystery spin all‑rounder",
-          "country": "WI",
-          "overseas": true,
-          "score": 0.788
-        },
-        {
-          "name": "Cameron Green",
-          "role": "allrounder",
-          "description": "Pace all‑rounder",
-          "country": "AUS",
-          "overseas": true,
-          "score": 0.787
-        },
-        {
-          "name": "Rinku Singh",
-          "role": "batter",
-          "description": "Finisher",
-          "country": "India",
-          "overseas": false,
-          "score": 0.78
-        },
-        {
-          "name": "Rachin Ravindra",
-          "role": "allrounder",
-          "description": "Batting all‑rounder",
-          "country": "NZ",
-          "overseas": true,
-          "score": 0.731
-        },
-        {
-          "name": "Akash Deep",
-          "role": "bowler",
-          "description": "Seamer",
-          "country": "India",
-          "overseas": false,
-          "score": 0.7
-        },
-        {
-          "name": "Umran Malik",
-          "role": "bowler",
-          "description": "Express pace",
-          "country": "India",
-          "overseas": false,
-          "score": 0.68
-        },
-        {
-          "name": "Rahul Tripathi",
-          "role": "batter",
-          "description": "Top‑order",
-          "country": "India",
-          "overseas": false,
-          "score": 0.68
-        },
-        {
-          "name": "Harshit Rana",
-          "role": "bowler",
-          "description": "Pacer",
-          "country": "India",
-          "overseas": false,
-          "score": 0.65
-        },
-        {
-          "name": "Kartik Tyagi",
-          "role": "bowler",
-          "description": "Fast bowler",
-          "country": "India",
-          "overseas": false,
-          "score": 0.65
-        }
-      ],
-      "impact": {
-        "name": "Rovman Powell",
-        "role": "allrounder",
-        "description": "Power‑hitting all‑rounder",
-        "country": "WI",
-        "overseas": true,
-        "score": 0.695
-      }
-    },
-    "LSG": {
-      "team": "LSG",
-      "xi": [
-        {
-          "name": "Mohammed Shami",
-          "role": "bowler",
-          "description": "Senior fast bowler",
-          "country": "India",
-          "overseas": false,
-          "score": 0.88
-        },
-        {
-          "name": "Mitchell Marsh",
-          "role": "batter",
-          "description": "Top‑order power‑hitter",
-          "country": "AUS",
-          "overseas": true,
-          "score": 0.86
-        },
-        {
-          "name": "Mayank Yadav",
-          "role": "bowler",
-          "description": "Pace bowler",
-          "country": "India",
-          "overseas": false,
-          "score": 0.86
-        },
-        {
-          "name": "Wanindu Hasaranga",
-          "role": "allrounder",
-          "description": "Leg‑spin all‑rounder",
-          "country": "SL",
-          "overseas": true,
-          "score": 0.81
-        },
-        {
-          "name": "Anrich Nortje",
-          "role": "bowler",
-          "description": "Fast bowler",
-          "country": "SA",
-          "overseas": true,
-          "score": 0.8
-        },
-        {
-          "name": "Ayush Badoni",
-          "role": "allrounder",
-          "description": "Middle‑order all‑rounder",
-          "country": "India",
-          "overseas": false,
-          "score": 0.718
-        },
-        {
-          "name": "Avesh Khan",
-          "role": "bowler",
-          "description": "Pace bowler",
-          "country": "India",
-          "overseas": false,
-          "score": 0.7
-        },
-        {
-          "name": "Rishabh Pant",
-          "role": "keeper",
-          "description": "Top‑order keeper",
-          "country": "India",
-          "overseas": false,
-          "score": 0.693
-        },
-        {
-          "name": "Abdul Samad",
-          "role": "batter",
-          "description": "Power‑hitter",
-          "country": "India",
-          "overseas": false,
-          "score": 0.68
-        },
-        {
-          "name": "Mohsin Khan",
-          "role": "bowler",
-          "description": "Left‑arm seamer",
-          "country": "India",
-          "overseas": false,
-          "score": 0.68
-        },
-        {
-          "name": "Aiden Markram",
-          "role": "batter",
-          "description": "Top‑order",
-          "country": "SA",
-          "overseas": true,
-          "score": 0.68
-        }
-      ],
-      "impact": {
-        "name": "Nicholas Pooran",
-        "role": "keeper",
-        "description": "Middle‑order keeper",
-        "country": "WI",
-        "overseas": true,
-        "score": 0.673
-      }
-    },
-    "MI": {
-      "team": "MI",
-      "xi": [
-        {
-          "name": "Suryakumar Yadav",
-          "role": "batter",
-          "description": "Middle‑order",
-          "country": "India",
-          "overseas": false,
-          "score": 0.95
-        },
-        {
-          "name": "Jasprit Bumrah",
-          "role": "bowler",
-          "description": "World‑class seamer",
-          "country": "India",
-          "overseas": false,
-          "score": 0.93
-        },
-        {
-          "name": "Trent Boult",
-          "role": "bowler",
-          "description": "Left‑arm swing",
-          "country": "NZ",
-          "overseas": true,
-          "score": 0.84
-        },
-        {
-          "name": "Tilak Varma",
-          "role": "batter",
-          "description": "Middle‑order",
-          "country": "India",
-          "overseas": false,
-          "score": 0.82
-        },
-        {
-          "name": "Hardik Pandya",
-          "role": "allrounder",
-          "description": "Seam all‑rounder",
-          "country": "India",
-          "overseas": false,
-          "score": 0.813
-        },
-        {
-          "name": "Shardul Thakur",
-          "role": "allrounder",
-          "description": "Seam all‑rounder",
-          "country": "India",
-          "overseas": false,
-          "score": 0.718
-        },
-        {
-          "name": "Mitchell Santner",
-          "role": "allrounder",
-          "description": "Spin all‑rounder",
-          "country": "NZ",
-          "overseas": true,
-          "score": 0.71
-        },
-        {
-          "name": "Rohit Sharma",
-          "role": "batter",
-          "description": "Opener",
-          "country": "India",
-          "overseas": false,
-          "score": 0.7
-        },
-        {
-          "name": "Deepak Chahar",
-          "role": "bowler",
-          "description": "New‑ball seamer",
-          "country": "India",
-          "overseas": false,
-          "score": 0.7
-        },
-        {
-          "name": "Will Jacks",
-          "role": "allrounder",
-          "description": "Batting all‑rounder",
-          "country": "AUS",
-          "overseas": true,
-          "score": 0.698
-        },
-        {
-          "name": "Mayank Markande",
-          "role": "bowler",
-          "description": "Leg‑spinner",
-          "country": "India",
-          "overseas": false,
-          "score": 0.68
-        }
-      ],
-      "impact": {
-        "name": "Sherfane Rutherford",
-        "role": "batter",
-        "description": "All‑round finisher",
-        "country": "WI",
-        "overseas": true,
-        "score": 0.68
-      }
-    },
-    "PBKS": {
-      "team": "PBKS",
-      "xi": [
-        {
-          "name": "Shashank Singh",
-          "role": "batter",
-          "description": "Middle‑order finisher",
-          "country": "India",
-          "overseas": false,
-          "score": 0.9
-        },
-        {
-          "name": "Yuzvendra Chahal",
-          "role": "bowler",
-          "description": "Leg‑spinner",
-          "country": "India",
-          "overseas": false,
-          "score": 0.9
-        },
-        {
-          "name": "Arshdeep Singh",
-          "role": "bowler",
-          "description": "Left‑arm seamer",
-          "country": "India",
-          "overseas": false,
-          "score": 0.88
-        },
-        {
-          "name": "Marcus Stoinis",
-          "role": "allrounder",
-          "description": "Pace all‑rounder",
-          "country": "AUS",
-          "overseas": true,
-          "score": 0.731
-        },
-        {
-          "name": "Marco Jansen",
-          "role": "allrounder",
-          "description": "Tall pace all‑rounder",
-          "country": "SA",
-          "overseas": true,
-          "score": 0.718
-        },
-        {
-          "name": "Azmatullah Omarzai",
-          "role": "allrounder",
-          "description": "Pace all‑rounder",
-          "country": "AFG",
-          "overseas": true,
-          "score": 0.718
-        },
-        {
-          "name": "Shreyas Iyer",
-          "role": "batter",
-          "description": "Top‑order",
-          "country": "India",
-          "overseas": false,
-          "score": 0.7
-        },
-        {
-          "name": "Lockie Ferguson",
-          "role": "bowler",
-          "description": "Fast bowler",
-          "country": "NZ",
-          "overseas": true,
-          "score": 0.7
-        },
-        {
-          "name": "Harpreet Brar",
-          "role": "allrounder",
-          "description": "Spin all‑rounder",
-          "country": "India",
-          "overseas": false,
-          "score": 0.696
-        },
-        {
-          "name": "Musheer Khan",
-          "role": "allrounder",
-          "description": "Batting all‑rounder",
-          "country": "India",
-          "overseas": false,
-          "score": 0.651
-        },
-        {
-          "name": "Priyansh Arya",
-          "role": "allrounder",
-          "description": "All‑rounder",
-          "country": "India",
-          "overseas": false,
-          "score": 0.64
-        }
-      ],
-      "impact": {
-        "name": "Xavier Bartlett",
-        "role": "bowler",
-        "description": "Pace bowler",
-        "country": "AUS",
-        "overseas": true,
-        "score": 0.68
-      }
-    },
-    "RR": {
-      "team": "RR",
-      "xi": [
-        {
-          "name": "Ravi Bishnoi",
-          "role": "bowler",
-          "description": "Leg‑spinner",
-          "country": "India",
-          "overseas": false,
-          "score": 0.88
-        },
-        {
-          "name": "Ravindra Jadeja",
-          "role": "allrounder",
-          "description": "World‑class all‑rounder",
-          "country": "India",
-          "overseas": false,
-          "score": 0.856
-        },
-        {
-          "name": "Yashasvi Jaiswal",
-          "role": "batter",
-          "description": "Aggressive opener",
-          "country": "India",
-          "overseas": false,
-          "score": 0.83
-        },
-        {
-          "name": "Jofra Archer",
-          "role": "bowler",
-          "description": "Fast bowler",
-          "country": "ENG",
-          "overseas": true,
-          "score": 0.8
-        },
-        {
-          "name": "Sam Curran",
-          "role": "allrounder",
-          "description": "Pace all‑rounder",
-          "country": "ENG",
-          "overseas": true,
-          "score": 0.743
-        },
-        {
-          "name": "Shimron Hetmyer",
-          "role": "batter",
-          "description": "Finisher",
-          "country": "WI",
-          "overseas": true,
-          "score": 0.7
-        },
-        {
-          "name": "Riyan Parag",
-          "role": "batter",
-          "description": "Middle‑order",
-          "country": "India",
-          "overseas": false,
-          "score": 0.7
-        },
-        {
-          "name": "Sandeep Sharma",
-          "role": "bowler",
-          "description": "Swing bowler",
-          "country": "India",
-          "overseas": false,
-          "score": 0.7
-        },
-        {
-          "name": "Tushar Deshpande",
-          "role": "bowler",
-          "description": "Seamer",
-          "country": "India",
-          "overseas": false,
-          "score": 0.68
-        },
-        {
-          "name": "Kuldeep Sen",
-          "role": "bowler",
-          "description": "Pacer",
-          "country": "India",
-          "overseas": false,
-          "score": 0.68
-        },
-        {
-          "name": "Kwena Maphaka",
-          "role": "bowler",
-          "description": "Left‑arm seamer",
-          "country": "SA",
-          "overseas": true,
-          "score": 0.68
-        }
-      ],
-      "impact": {
-        "name": "Nandre Burger",
-        "role": "bowler",
-        "description": "Left‑arm seamer",
-        "country": "SA",
-        "overseas": true,
-        "score": 0.68
-      }
-    },
-    "RCB": {
-      "team": "RCB",
-      "xi": [
-        {
-          "name": "Virat Kohli",
-          "role": "batter",
-          "description": "Top‑order run‑machine",
-          "country": "India",
-          "overseas": false,
-          "score": 0.92
-        },
-        {
-          "name": "Yash Dayal",
-          "role": "bowler",
-          "description": "Left‑arm seamer",
-          "country": "India",
-          "overseas": false,
-          "score": 0.9
-        },
-        {
-          "name": "Bhuvneshwar Kumar",
-          "role": "bowler",
-          "description": "Swing bowler",
-          "country": "India",
-          "overseas": false,
-          "score": 0.82
-        },
-        {
-          "name": "Josh Hazlewood",
-          "role": "bowler",
-          "description": "Fast bowler",
-          "country": "AUS",
-          "overseas": true,
-          "score": 0.76
-        },
-        {
-          "name": "Krunal Pandya",
-          "role": "allrounder",
-          "description": "Spin all‑rounder",
-          "country": "India",
-          "overseas": false,
-          "score": 0.727
-        },
-        {
-          "name": "Romario Shepherd",
-          "role": "allrounder",
-          "description": "Power all‑rounder",
-          "country": "WI",
-          "overseas": true,
-          "score": 0.709
-        },
-        {
-          "name": "Rajat Patidar",
-          "role": "batter",
-          "description": "Top‑order",
-          "country": "India",
-          "overseas": false,
-          "score": 0.7
-        },
-        {
-          "name": "Devdutt Padikkal",
-          "role": "batter",
-          "description": "Top‑order",
-          "country": "India",
-          "overseas": false,
-          "score": 0.7
-        },
-        {
-          "name": "Venkatesh Iyer",
-          "role": "allrounder",
-          "description": "Batting all‑rounder",
-          "country": "India",
-          "overseas": false,
-          "score": 0.695
-        },
-        {
-          "name": "Suyash Sharma",
-          "role": "bowler",
-          "description": "Leg‑spinner",
-          "country": "India",
-          "overseas": false,
-          "score": 0.68
-        },
-        {
-          "name": "Nuwan Thushara",
-          "role": "bowler",
-          "description": "Slingy seamer",
-          "country": "SL",
-          "overseas": true,
-          "score": 0.68
-        }
-      ],
-      "impact": {
-        "name": "Tim David",
-        "role": "allrounder",
-        "description": "Power‑hitting all‑rounder",
-        "country": "AUS",
-        "overseas": true,
-        "score": 0.675
+        "score": 0.88
       }
     },
     "SRH": {
       "team": "SRH",
       "xi": [
         {
-          "name": "Pat Cummins",
-          "role": "bowler",
-          "description": "Fast bowler",
-          "country": "AUS",
-          "overseas": true,
-          "score": 0.88
-        },
-        {
-          "name": "Eshan Malinga",
-          "role": "bowler",
-          "description": "Seamer",
-          "country": "SL",
-          "overseas": true,
-          "score": 0.86
-        },
-        {
-          "name": "Abhishek Sharma",
-          "role": "allrounder",
-          "description": "Top‑order all‑rounder",
-          "country": "India",
-          "overseas": false,
-          "score": 0.828
-        },
-        {
           "name": "Travis Head",
           "role": "batter",
           "description": "Aggressive opener",
           "country": "AUS",
           "overseas": true,
-          "score": 0.78
+          "score": 0.93
         },
         {
-          "name": "Harshal Patel",
+          "name": "Abhishek Sharma",
           "role": "allrounder",
-          "description": "Seam all‑rounder",
+          "description": "Top-order all-rounder",
           "country": "India",
           "overseas": false,
-          "score": 0.754
+          "score": 0.94
         },
         {
-          "name": "Liam Livingstone",
-          "role": "allrounder",
-          "description": "Batting all‑rounder",
-          "country": "ENG",
-          "overseas": true,
-          "score": 0.753
+          "name": "Ishan Kishan",
+          "role": "keeper",
+          "description": "Top-order keeper",
+          "country": "India",
+          "overseas": false,
+          "score": 0.9
         },
         {
           "name": "Nitish Kumar Reddy",
           "role": "allrounder",
-          "description": "All‑rounder",
+          "description": "Middle-order all-rounder",
           "country": "India",
           "overseas": false,
-          "score": 0.731
+          "score": 0.82
+        },
+        {
+          "name": "Heinrich Klaasen",
+          "role": "keeper",
+          "description": "Middle-order (wk)",
+          "country": "SA",
+          "overseas": true,
+          "score": 0.93
+        },
+        {
+          "name": "Aniket Verma",
+          "role": "batter",
+          "description": "Middle-order batter",
+          "country": "India",
+          "overseas": false,
+          "score": 0.8
+        },
+        {
+          "name": "Liam Livingstone",
+          "role": "allrounder",
+          "description": "Batting all-rounder",
+          "country": "ENG",
+          "overseas": true,
+          "score": 0.9
+        },
+        {
+          "name": "Pat Cummins",
+          "role": "bowler",
+          "description": "Captain fast bowler",
+          "country": "AUS",
+          "overseas": true,
+          "score": 0.9
+        },
+        {
+          "name": "Harshal Patel",
+          "role": "allrounder",
+          "description": "Death-overs seamer",
+          "country": "India",
+          "overseas": false,
+          "score": 0.9
         },
         {
           "name": "Shivam Mavi",
@@ -974,40 +586,428 @@
           "description": "Pacer",
           "country": "India",
           "overseas": false,
-          "score": 0.7
+          "score": 0.8
         },
         {
           "name": "Jaydev Unadkat",
           "role": "bowler",
-          "description": "Left‑arm seamer",
+          "description": "Left-arm seamer",
           "country": "India",
           "overseas": false,
-          "score": 0.68
-        },
-        {
-          "name": "Harsh Dubey",
-          "role": "allrounder",
-          "description": "All‑rounder",
-          "country": "India",
-          "overseas": false,
-          "score": 0.64
-        },
-        {
-          "name": "Shivang Kumar",
-          "role": "allrounder",
-          "description": "All‑rounder",
-          "country": "India",
-          "overseas": false,
-          "score": 0.64
+          "score": 0.78
         }
       ],
       "impact": {
-        "name": "Kamindu Mendis",
-        "role": "allrounder",
-        "description": "All‑rounder",
-        "country": "SL",
+        "name": "Zeeshan Ansari",
+        "role": "bowler",
+        "description": "Impact spinner",
+        "country": "India",
+        "overseas": false,
+        "score": 0.78
+      }
+    },
+    "GT": {
+      "team": "GT",
+      "xi": [
+        {
+          "name": "Shubman Gill",
+          "role": "batter",
+          "description": "Opener (captain)",
+          "country": "India",
+          "overseas": false,
+          "score": 0.93
+        },
+        {
+          "name": "Sai Sudharsan",
+          "role": "batter",
+          "description": "Top-order batter",
+          "country": "India",
+          "overseas": false,
+          "score": 0.95
+        },
+        {
+          "name": "Jos Buttler",
+          "role": "keeper",
+          "description": "Aggressive opener (wk)",
+          "country": "ENG",
+          "overseas": true,
+          "score": 0.95
+        },
+        {
+          "name": "Washington Sundar",
+          "role": "allrounder",
+          "description": "Spin all-rounder",
+          "country": "India",
+          "overseas": false,
+          "score": 0.82
+        },
+        {
+          "name": "Shahrukh Khan",
+          "role": "batter",
+          "description": "Finisher",
+          "country": "India",
+          "overseas": false,
+          "score": 0.84
+        },
+        {
+          "name": "Glenn Phillips",
+          "role": "allrounder",
+          "description": "Middle-order all-rounder",
+          "country": "NZ",
+          "overseas": true,
+          "score": 0.86
+        },
+        {
+          "name": "Rahul Tewatia",
+          "role": "allrounder",
+          "description": "Finisher all-rounder",
+          "country": "India",
+          "overseas": false,
+          "score": 0.82
+        },
+        {
+          "name": "Rashid Khan",
+          "role": "bowler",
+          "description": "World-class spinner",
+          "country": "AFG",
+          "overseas": true,
+          "score": 0.96
+        },
+        {
+          "name": "Sai Kishore",
+          "role": "bowler",
+          "description": "Left-arm spinner",
+          "country": "India",
+          "overseas": false,
+          "score": 0.86
+        },
+        {
+          "name": "Kagiso Rabada",
+          "role": "bowler",
+          "description": "Strike fast bowler",
+          "country": "SA",
+          "overseas": true,
+          "score": 0.92
+        },
+        {
+          "name": "Prasidh Krishna",
+          "role": "bowler",
+          "description": "Hit-the-deck quick",
+          "country": "India",
+          "overseas": false,
+          "score": 0.92
+        }
+      ],
+      "impact": {
+        "name": "Mohammed Siraj",
+        "role": "bowler",
+        "description": "Impact fast bowler",
+        "country": "India",
+        "overseas": false,
+        "score": 0.93
+      }
+    },
+    "PBKS": {
+      "team": "PBKS",
+      "xi": [
+        {
+          "name": "Priyansh Arya",
+          "role": "allrounder",
+          "description": "Top-order all-rounder",
+          "country": "India",
+          "overseas": false,
+          "score": 0.82
+        },
+        {
+          "name": "Prabhsimran Singh",
+          "role": "keeper",
+          "description": "Aggressive opener (wk)",
+          "country": "India",
+          "overseas": false,
+          "score": 0.84
+        },
+        {
+          "name": "Shreyas Iyer",
+          "role": "batter",
+          "description": "Top-order (captain)",
+          "country": "India",
+          "overseas": false,
+          "score": 0.9
+        },
+        {
+          "name": "Nehal Wadhera",
+          "role": "batter",
+          "description": "Middle-order batter",
+          "country": "India",
+          "overseas": false,
+          "score": 0.8
+        },
+        {
+          "name": "Mitch Owen",
+          "role": "allrounder",
+          "description": "Batting all-rounder",
+          "country": "AUS",
+          "overseas": true,
+          "score": 0.8
+        },
+        {
+          "name": "Marcus Stoinis",
+          "role": "allrounder",
+          "description": "Pace all-rounder",
+          "country": "AUS",
+          "overseas": true,
+          "score": 0.86
+        },
+        {
+          "name": "Shashank Singh",
+          "role": "batter",
+          "description": "Finisher",
+          "country": "India",
+          "overseas": false,
+          "score": 0.9
+        },
+        {
+          "name": "Marco Jansen",
+          "role": "allrounder",
+          "description": "Tall pace all-rounder",
+          "country": "SA",
+          "overseas": true,
+          "score": 0.82
+        },
+        {
+          "name": "Harpreet Brar",
+          "role": "allrounder",
+          "description": "Spin all-rounder",
+          "country": "India",
+          "overseas": false,
+          "score": 0.82
+        },
+        {
+          "name": "Arshdeep Singh",
+          "role": "bowler",
+          "description": "Left-arm seamer",
+          "country": "India",
+          "overseas": false,
+          "score": 0.9
+        },
+        {
+          "name": "Lockie Ferguson",
+          "role": "bowler",
+          "description": "Fast bowler",
+          "country": "NZ",
+          "overseas": true,
+          "score": 0.88
+        }
+      ],
+      "impact": {
+        "name": "Yuzvendra Chahal",
+        "role": "bowler",
+        "description": "Impact leg-spinner",
+        "country": "India",
+        "overseas": false,
+        "score": 0.93
+      }
+    },
+    "RR": {
+      "team": "RR",
+      "xi": [
+        {
+          "name": "Yashasvi Jaiswal",
+          "role": "batter",
+          "description": "Aggressive opener",
+          "country": "India",
+          "overseas": false,
+          "score": 0.94
+        },
+        {
+          "name": "Vaibhav Suryavanshi",
+          "role": "batter",
+          "description": "Top-order batter",
+          "country": "India",
+          "overseas": false,
+          "score": 0.9
+        },
+        {
+          "name": "Lhuan-dre Pretorius",
+          "role": "batter",
+          "description": "Top-order batter",
+          "country": "SA",
+          "overseas": true,
+          "score": 0.84
+        },
+        {
+          "name": "Riyan Parag",
+          "role": "batter",
+          "description": "Middle-order (captain)",
+          "country": "India",
+          "overseas": false,
+          "score": 0.88
+        },
+        {
+          "name": "Dhruv Jurel",
+          "role": "keeper",
+          "description": "Middle-order (wk)",
+          "country": "India",
+          "overseas": false,
+          "score": 0.87
+        },
+        {
+          "name": "Shimron Hetmyer",
+          "role": "batter",
+          "description": "Finisher",
+          "country": "WI",
+          "overseas": true,
+          "score": 0.88
+        },
+        {
+          "name": "Ravindra Jadeja",
+          "role": "allrounder",
+          "description": "World-class all-rounder",
+          "country": "India",
+          "overseas": false,
+          "score": 0.9
+        },
+        {
+          "name": "Sam Curran",
+          "role": "allrounder",
+          "description": "Pace all-rounder",
+          "country": "ENG",
+          "overseas": true,
+          "score": 0.87
+        },
+        {
+          "name": "Jofra Archer",
+          "role": "bowler",
+          "description": "Fast bowler",
+          "country": "ENG",
+          "overseas": true,
+          "score": 0.9
+        },
+        {
+          "name": "Ravi Bishnoi",
+          "role": "bowler",
+          "description": "Leg-spinner",
+          "country": "India",
+          "overseas": false,
+          "score": 0.9
+        },
+        {
+          "name": "Tushar Deshpande",
+          "role": "bowler",
+          "description": "Seamer",
+          "country": "India",
+          "overseas": false,
+          "score": 0.82
+        }
+      ],
+      "impact": {
+        "name": "Sandeep Sharma",
+        "role": "bowler",
+        "description": "Impact swing bowler",
+        "country": "India",
+        "overseas": false,
+        "score": 0.82
+      }
+    },
+    "MI": {
+      "team": "MI",
+      "xi": [
+        {
+          "name": "Rohit Sharma",
+          "role": "batter",
+          "description": "Opener",
+          "country": "India",
+          "overseas": false,
+          "score": 0.88
+        },
+        {
+          "name": "Quinton De Kock",
+          "role": "keeper",
+          "description": "Top-order (wk)",
+          "country": "SA",
+          "overseas": true,
+          "score": 0.86
+        },
+        {
+          "name": "Suryakumar Yadav",
+          "role": "batter",
+          "description": "Middle-order batter",
+          "country": "India",
+          "overseas": false,
+          "score": 0.96
+        },
+        {
+          "name": "Tilak Varma",
+          "role": "batter",
+          "description": "Middle-order batter",
+          "country": "India",
+          "overseas": false,
+          "score": 0.9
+        },
+        {
+          "name": "Hardik Pandya",
+          "role": "allrounder",
+          "description": "Seam all-rounder (captain)",
+          "country": "India",
+          "overseas": false,
+          "score": 0.9
+        },
+        {
+          "name": "Naman Dhir",
+          "role": "allrounder",
+          "description": "Batting all-rounder",
+          "country": "India",
+          "overseas": false,
+          "score": 0.8
+        },
+        {
+          "name": "Mitchell Santner",
+          "role": "allrounder",
+          "description": "Spin all-rounder",
+          "country": "NZ",
+          "overseas": true,
+          "score": 0.82
+        },
+        {
+          "name": "Deepak Chahar",
+          "role": "bowler",
+          "description": "New-ball seamer",
+          "country": "India",
+          "overseas": false,
+          "score": 0.82
+        },
+        {
+          "name": "Trent Boult",
+          "role": "bowler",
+          "description": "Left-arm swing bowler",
+          "country": "NZ",
+          "overseas": true,
+          "score": 0.9
+        },
+        {
+          "name": "Jasprit Bumrah",
+          "role": "bowler",
+          "description": "Strike fast bowler",
+          "country": "India",
+          "overseas": false,
+          "score": 0.97
+        },
+        {
+          "name": "Mayank Markande",
+          "role": "bowler",
+          "description": "Leg-spinner",
+          "country": "India",
+          "overseas": false,
+          "score": 0.82
+        }
+      ],
+      "impact": {
+        "name": "Sherfane Rutherford",
+        "role": "batter",
+        "description": "Impact finisher",
+        "country": "WI",
         "overseas": true,
-        "score": 0.689
+        "score": 0.86
       }
     }
   },
@@ -1016,49 +1016,49 @@
       "name": "Sai Sudharsan",
       "team": "GT",
       "role": "batter",
-      "score": 1.0
+      "score": 0.95
     },
     {
       "name": "Suryakumar Yadav",
       "team": "MI",
       "role": "batter",
-      "score": 0.95
+      "score": 0.96
     },
     {
       "name": "Virat Kohli",
       "team": "RCB",
       "role": "batter",
-      "score": 0.92
+      "score": 0.96
     },
     {
       "name": "Shubman Gill",
       "team": "GT",
       "role": "batter",
-      "score": 0.9
+      "score": 0.93
     },
     {
-      "name": "Shashank Singh",
-      "team": "PBKS",
-      "role": "batter",
-      "score": 0.9
+      "name": "Abhishek Sharma",
+      "team": "SRH",
+      "role": "allrounder",
+      "score": 0.94
     }
   ],
   "top_wkts_pred": [
     {
-      "name": "Mitchell Starc",
-      "team": "DC",
+      "name": "Jasprit Bumrah",
+      "team": "MI",
       "role": "bowler",
-      "score": 0.95
+      "score": 0.97
     },
     {
       "name": "Rashid Khan",
       "team": "GT",
       "role": "bowler",
-      "score": 0.93
+      "score": 0.96
     },
     {
-      "name": "Jasprit Bumrah",
-      "team": "MI",
+      "name": "Mohammed Siraj",
+      "team": "GT",
       "role": "bowler",
       "score": 0.93
     },
@@ -1069,79 +1069,74 @@
       "score": 0.92
     },
     {
-      "name": "Noor Ahmad",
-      "team": "CSK",
+      "name": "Yuzvendra Chahal",
+      "team": "PBKS",
       "role": "bowler",
-      "score": 0.9
+      "score": 0.93
     }
   ],
   "projections": [
     {
-      "team": "RCB",
-      "strength": 0.825,
-      "p_top4": 0.395,
-      "p_title": 0.214
-    },
-    {
-      "team": "PBKS",
-      "strength": 0.818,
-      "p_top4": 0.393,
-      "p_title": 0.211
-    },
-    {
       "team": "GT",
-      "strength": 0.794,
-      "p_top4": 0.386,
-      "p_title": 0.203
+      "strength": 0.9,
+      "p_top4": 0.9,
+      "p_title": 0.35
     },
     {
       "team": "MI",
-      "strength": 0.701,
-      "p_top4": 0.357,
-      "p_title": 0.171
+      "strength": 0.88,
+      "p_top4": 0.88,
+      "p_title": 0.32
     },
     {
-      "team": "DC",
-      "strength": 0.651,
-      "p_top4": 0.342,
-      "p_title": 0.153
+      "team": "RCB",
+      "strength": 0.86,
+      "p_top4": 0.86,
+      "p_title": 0.28
     },
     {
-      "team": "SRH",
-      "strength": 0.567,
-      "p_top4": 0.316,
-      "p_title": 0.124
-    },
-    {
-      "team": "LSG",
-      "strength": 0.532,
-      "p_top4": 0.305,
-      "p_title": 0.112
-    },
-    {
-      "team": "KKR",
-      "strength": 0.527,
-      "p_top4": 0.303,
-      "p_title": 0.11
-    },
-    {
-      "team": "RR",
-      "strength": 0.363,
-      "p_top4": 0.253,
-      "p_title": 0.053
+      "team": "PBKS",
+      "strength": 0.84,
+      "p_top4": 0.82,
+      "p_title": 0.24
     },
     {
       "team": "CSK",
-      "strength": 0.354,
-      "p_top4": 0.25,
-      "p_title": 0.05
+      "strength": 0.8,
+      "p_top4": 0.7,
+      "p_title": 0.18
+    },
+    {
+      "team": "RR",
+      "strength": 0.79,
+      "p_top4": 0.68,
+      "p_title": 0.17
+    },
+    {
+      "team": "SRH",
+      "strength": 0.78,
+      "p_top4": 0.66,
+      "p_title": 0.16
+    },
+    {
+      "team": "DC",
+      "strength": 0.76,
+      "p_top4": 0.6,
+      "p_title": 0.14
+    },
+    {
+      "team": "LSG",
+      "strength": 0.75,
+      "p_top4": 0.58,
+      "p_title": 0.13
+    },
+    {
+      "team": "KKR",
+      "strength": 0.74,
+      "p_top4": 0.56,
+      "p_title": 0.12
     }
   ],
-  "top4_predicted": [
-    "RCB",
-    "PBKS",
-    "GT",
-    "MI"
-  ],
-  "title_favourite": "RCB"
+  "top4_predicted": ["GT", "MI", "RCB", "PBKS"],
+  "title_favourite": "GT"
 }
