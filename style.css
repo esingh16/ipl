@@ -1,17 +1,16 @@
 :root {
   --bg: #050816;
-  --bg-alt: #0b1020;
   --accent1: #ff6bcb;
   --accent2: #54d6ff;
   --accent3: #ffd166;
   --text: #f2f2f7;
   --muted: #a1a1b5;
-  --card: rgba(18, 24, 48, 0.95);
   --radius-lg: 18px;
   --radius-sm: 10px;
   --shadow-soft: 0 18px 40px rgba(0, 0, 0, 0.6);
 }
 
+/* Reset */
 *,
 *::before,
 *::after {
@@ -28,6 +27,7 @@ body {
   min-height: 100vh;
 }
 
+/* Hero */
 .hero {
   position: relative;
   padding: 24px 16px 40px;
@@ -82,6 +82,25 @@ body {
   backdrop-filter: blur(10px);
 }
 
+.winner-btn {
+  margin-top: 14px;
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: #050816;
+  background: linear-gradient(120deg, var(--accent1), var(--accent2));
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.6);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.winner-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.7);
+}
+
+/* Layout */
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -111,6 +130,7 @@ body {
   margin-top: 4px;
 }
 
+/* Team tabs */
 .team-tabs {
   display: flex;
   flex-wrap: wrap;
@@ -140,11 +160,11 @@ body {
   border-color: transparent;
 }
 
+/* XI + impact */
 .best12-wrapper {
   display: grid;
-  grid-template-columns: minmax(0, 2.5fr) minmax(0, 1.3fr);
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1.2fr);
   gap: 16px;
-  align-items: flex-start;
 }
 
 .subtitle {
@@ -152,83 +172,66 @@ body {
   font-size: 0.84rem;
 }
 
-.player-grid {
+.xi-list {
+  list-style: decimal;
+  padding-left: 18px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(155px, 1fr));
-  gap: 10px;
+  gap: 6px;
 }
 
-.player-card {
-  position: relative;
-  border-radius: var(--radius-sm);
-  padding: 10px 10px 9px;
+.xi-item {
   background: radial-gradient(circle at 0 0, #ff6bcb22, #1a1e3d);
+  border-radius: var(--radius-sm);
+  padding: 8px 10px;
   border: 1px solid #ffffff22;
-  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.6);
-  overflow: hidden;
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.5);
 }
 
-.player-main {
-  position: relative;
+.xi-main {
   display: flex;
   justify-content: space-between;
-  gap: 8px;
   align-items: center;
+  gap: 8px;
 }
 
-.player-info {}
-
-.player-name {
+.xi-name {
   font-size: 0.95rem;
   font-weight: 600;
 }
 
-.player-role {
+.xi-role {
   font-size: 0.78rem;
   color: var(--muted);
 }
 
-.player-tags {
+.xi-tags {
+  margin-top: 4px;
   display: flex;
   flex-wrap: wrap;
   gap: 4px;
-  margin-top: 6px;
+  font-size: 0.68rem;
 }
 
-.tag {
+.badge {
   padding: 2px 6px;
   border-radius: 999px;
   border: 1px solid #ffffff33;
-  font-size: 0.68rem;
   background: #02041ed0;
 }
 
-.tag.overseas {
-  background: #ffd1661f;
-  border-color: #ffd16680;
-  color: #ffd166;
-}
-
-.tag.indian {
-  border-color: #54d6ff80;
-  color: #54d6ff;
-}
-
-.tag.bowler {
-  border-color: #ff6bcb80;
-  color: #ff6bcb;
-}
-
-.player-score {
-  font-size: 0.9rem;
-  font-weight: 600;
+.badge-captain {
+  border-color: var(--accent3);
   color: var(--accent3);
 }
 
-.player-meta {
-  margin-top: 4px;
-  font-size: 0.72rem;
-  color: var(--muted);
+.badge-wk {
+  border-color: var(--accent2);
+  color: var(--accent2);
+}
+
+.badge-overseas {
+  border-color: var(--accent1);
+  color: var(--accent1);
 }
 
 .impact-card {
@@ -255,6 +258,19 @@ body {
   color: #54d6ff;
 }
 
+.impact-name {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+.impact-meta {
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-top: 4px;
+}
+
+/* Tables */
 .stats-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -302,6 +318,7 @@ tbody tr:hover {
   font-variant-numeric: tabular-nums;
 }
 
+/* Footer */
 .footer {
   text-align: center;
   padding: 14px 10px 20px;
@@ -309,12 +326,129 @@ tbody tr:hover {
   color: var(--muted);
 }
 
-.summary-text {
-  margin-top: 10px;
-  font-size: 0.9rem;
-  color: var(--accent3);
+/* Winner modal */
+.winner-modal {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 40;
 }
 
+.hidden {
+  display: none;
+}
+
+.winner-backdrop {
+  position: absolute;
+  inset: 0;
+  backdrop-filter: blur(6px);
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.winner-content {
+  position: relative;
+  background: radial-gradient(circle at 0 0, #ff6bcb33, #120f2b);
+  border-radius: 18px;
+  padding: 20px 22px 18px;
+  border: 1px solid #ffffff33;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8);
+  max-width: 360px;
+  width: 90%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.winner-content h2 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.winner-name {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--accent3);
+  margin-bottom: 12px;
+}
+
+.winner-close {
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: #050816;
+  background: linear-gradient(120deg, var(--accent2), var(--accent1));
+}
+
+/* Fireworks */
+.winner-fireworks {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.spark {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 999px;
+  background: var(--accent3);
+  animation: sparkBurst 1.4s ease-out infinite;
+}
+
+.spark-1 {
+  left: 15%;
+  top: 20%;
+  animation-delay: 0s;
+}
+
+.spark-2 {
+  right: 18%;
+  top: 28%;
+  background: var(--accent1);
+  animation-delay: 0.2s;
+}
+
+.spark-3 {
+  left: 25%;
+  bottom: 18%;
+  background: var(--accent2);
+  animation-delay: 0.4s;
+}
+
+.spark-4 {
+  right: 20%;
+  bottom: 12%;
+  background: #ffffff;
+  animation-delay: 0.6s;
+}
+
+@keyframes sparkBurst {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0;
+  }
+  20% {
+    transform: translate(-10px, -30px) scale(1.4);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(15px, -50px) scale(0.9);
+    opacity: 0.8;
+  }
+  80% {
+    transform: translate(-5px, -70px) scale(0.6);
+    opacity: 0.3;
+  }
+  100% {
+    transform: translate(0, -80px) scale(0.4);
+    opacity: 0;
+  }
+}
+
+/* Responsive */
 @media (max-width: 800px) {
   .best12-wrapper {
     grid-template-columns: minmax(0, 1fr);
