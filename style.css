@@ -25,6 +25,51 @@ body {
   background: radial-gradient(circle at top, #151b3c, #050816 60%);
   color: var(--text);
   min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Floating moving objects */
+.orb {
+  position: fixed;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  filter: blur(40px);
+  opacity: 0.25;
+  z-index: -1;
+  animation: floatOrb 22s ease-in-out infinite alternate;
+}
+
+.orb-1 {
+  background: #ff6bcb55;
+  top: -60px;
+  left: -40px;
+}
+
+.orb-2 {
+  background: #54d6ff55;
+  bottom: -80px;
+  right: -60px;
+  animation-delay: 4s;
+}
+
+.orb-3 {
+  background: #ffd16655;
+  top: 40%;
+  left: 60%;
+  animation-delay: 8s;
+}
+
+@keyframes floatOrb {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(40px, -30px, 0) scale(1.05);
+  }
+  100% {
+    transform: translate3d(-20px, 40px, 0) scale(0.98);
+  }
 }
 
 /* Hero */
@@ -51,10 +96,22 @@ body {
   margin: 0 auto;
 }
 
+.hero-title-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 6px;
+}
+
+.ipl-logo {
+  width: 70px;
+  height: auto;
+  filter: drop-shadow(0 0 10px #ffffff55);
+}
+
 .hero h1 {
   font-size: clamp(2.4rem, 4vw, 3.3rem);
   letter-spacing: 0.04em;
-  margin-bottom: 10px;
   background: linear-gradient(120deg, #ffffff, #ffd166, #54d6ff);
   -webkit-background-clip: text;
   color: transparent;
@@ -82,9 +139,37 @@ body {
   backdrop-filter: blur(10px);
 }
 
+/* Neon buttons */
+.neon-btn {
+  position: relative;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.35),
+    0 0 24px rgba(84, 214, 255, 0.4);
+}
+
+.neon-btn::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: inherit;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  opacity: 0;
+  pointer-events: none;
+  animation: neonPulse 2.2s ease-in-out infinite;
+}
+
+@keyframes neonPulse {
+  0%,
+  100% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+
 .winner-btn {
   margin-top: 14px;
-  padding: 8px 16px;
+  padding: 8px 18px;
   border-radius: 999px;
   border: none;
   cursor: pointer;
@@ -130,34 +215,61 @@ body {
   margin-top: 4px;
 }
 
-/* Team tabs */
+/* Team logo selector */
 .team-tabs {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 10px;
 }
 
-.team-tab {
-  padding: 8px 14px;
-  border-radius: 999px;
+.team-logo-grid {
+  justify-content: center;
+}
+
+.team-logo-btn {
+  position: relative;
+  width: 84px;
+  height: 84px;
+  border-radius: 18px;
+  border: 2px solid transparent;
+  background: radial-gradient(circle at 0 0, #ffffff18, #00000040);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
-  border: 1px solid #ffffff21;
-  font-size: 0.85rem;
-  color: var(--muted);
-  background: radial-gradient(circle at 0 0, #ffffff18, #ffffff05);
-  transition: transform 0.16s ease, box-shadow 0.16s ease,
-    background 0.16s ease, color 0.16s ease, border-color 0.16s ease;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+  transition: transform 0.18s ease, box-shadow 0.18s ease,
+    border-color 0.18s ease, background 0.18s ease;
 }
 
-.team-tab:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.6);
+.team-logo-btn img {
+  max-width: 70px;
+  max-height: 70px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 6px #000000bb);
 }
 
-.team-tab.active {
-  background: linear-gradient(120deg, var(--accent1), var(--accent2));
-  color: #050816;
-  border-color: transparent;
+.team-logo-btn::after {
+  content: attr(data-code);
+  position: absolute;
+  bottom: 4px;
+  left: 0;
+  right: 0;
+  font-size: 0.7rem;
+  text-align: center;
+  color: #f2f2f7dd;
+  text-shadow: 0 0 4px #000;
+}
+
+.team-logo-btn:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.8);
+}
+
+.team-logo-btn.active {
+  border-color: #ffffffcc;
+  background: radial-gradient(circle at 0 0, #ffffff40, #00000080);
 }
 
 /* XI + impact */
@@ -170,21 +282,36 @@ body {
 .subtitle {
   color: var(--muted);
   font-size: 0.84rem;
+  margin-bottom: 6px;
 }
 
 .xi-list {
-  list-style: decimal;
-  padding-left: 18px;
+  list-style: none;
   display: grid;
   gap: 6px;
 }
 
+/* Base XI card; actual colour is themed per team via JS inline style */
 .xi-item {
-  background: radial-gradient(circle at 0 0, #ff6bcb22, #1a1e3d);
   border-radius: var(--radius-sm);
   padding: 8px 10px;
   border: 1px solid #ffffff22;
   box-shadow: 0 12px 20px rgba(0, 0, 0, 0.5);
+  transform-origin: left center;
+  opacity: 0;
+  transform: translateX(-10px) scale(0.98);
+  animation: slideInXi 0.35s ease-out forwards;
+}
+
+@keyframes slideInXi {
+  0% {
+    opacity: 0;
+    transform: translateX(-10px) scale(0.98);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
 }
 
 .xi-main {
@@ -234,6 +361,13 @@ body {
   color: var(--accent1);
 }
 
+.player-score {
+  font-size: 0.9rem;
+  font-variant-numeric: tabular-nums;
+  color: var(--accent3);
+}
+
+/* Impact */
 .impact-card {
   border-radius: var(--radius-lg);
   padding: 12px 12px 10px;
@@ -241,6 +375,7 @@ body {
   border: 1px solid #54d6ff66;
   box-shadow: 0 14px 34px rgba(0, 0, 0, 0.7);
   min-height: 88px;
+  transition: background 0.2s ease, border-color 0.2s ease;
 }
 
 .impact-card.empty {
@@ -360,6 +495,11 @@ tbody tr:hover {
   overflow: hidden;
 }
 
+.neon-border {
+  box-shadow: 0 0 16px rgba(255, 209, 102, 0.8),
+    0 0 32px rgba(255, 107, 203, 0.5);
+}
+
 .winner-content h2 {
   font-size: 1.2rem;
   margin-bottom: 8px;
@@ -452,5 +592,10 @@ tbody tr:hover {
 @media (max-width: 800px) {
   .best12-wrapper {
     grid-template-columns: minmax(0, 1fr);
+  }
+
+  .team-logo-btn {
+    width: 76px;
+    height: 76px;
   }
 }
