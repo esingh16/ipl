@@ -250,17 +250,6 @@ body {
   filter: drop-shadow(0 0 6px #000000bb);
 }
 
-.team-logo-btn::after {
-  content: attr(data-code);
-  position: absolute;
-  bottom: 4px;
-  left: 0;
-  right: 0;
-  font-size: 0.7rem;
-  text-align: center;
-  color: #f2f2f7dd;
-  text-shadow: 0 0 4px #000;
-}
 
 .team-logo-btn:hover {
   transform: translateY(-3px) scale(1.03);
