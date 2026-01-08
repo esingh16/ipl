@@ -1,5 +1,6 @@
 const TEAM_CODES = ["CSK", "DC", "GT", "KKR", "LSG", "MI", "PBKS", "RR", "RCB", "SRH"];
 
+// main theme colour per team (used for cards/backgrounds)
 const teamColors = {
   CSK: "#f9de2a",
   DC: "#004c93",
@@ -13,7 +14,21 @@ const teamColors = {
   SRH: "#ff822a"
 };
 
-// captains you specified
+// paths to the logos you attached
+const teamLogos = {
+  CSK: "csk.jpg",
+  DC: "dc.jpg",
+  GT: "gt.jpg",
+  KKR: "kkr.jpg",
+  LSG: "lsg.jpg",
+  MI: "mi.jpg",
+  PBKS: "pbks.jpg",
+  RR: "rr.jpg",
+  RCB: "rcb.jpg",
+  SRH: "srh.jpg"
+};
+
+// captains
 const CAPTAINS = {
   CSK: "Ruturaj Gaikwad",
   MI: "Hardik Pandya",
@@ -27,7 +42,6 @@ const CAPTAINS = {
   DC: "Axar Patel"
 };
 
-// winner modal wiring
 const teamTabsEl = document.getElementById("teamTabs");
 const xiListEl = document.getElementById("xiList");
 const impactCardEl = document.getElementById("impactCard");
@@ -59,22 +73,32 @@ function initUI() {
 
 function renderTeamTabs() {
   teamTabsEl.innerHTML = "";
-  TEAM_CODES.forEach(code => {
+  TEAM_CODES.forEach((code) => {
     const btn = document.createElement("button");
-    btn.className = "team-tab";
-    btn.textContent = code;
-    btn.style.borderColor = `${teamColors[code]}55`;
+    btn.className = "team-logo-btn";
+    btn.dataset.code = code;
+    btn.style.borderColor = `${teamColors[code]}aa`;
+    btn.style.boxShadow = `0 10px 24px ${teamColors[code]}55`;
+
+    const img = document.createElement("img");
+    img.src = teamLogos[code];
+    img.alt = `${code} logo`;
+
+    btn.appendChild(img);
+
     btn.addEventListener("click", () => {
       currentTeam = code;
       updateTeam(code);
       document
-        .querySelectorAll(".team-tab")
-        .forEach(el => el.classList.remove("active"));
+        .querySelectorAll(".team-logo-btn")
+        .forEach((el) => el.classList.remove("active"));
       btn.classList.add("active");
     });
+
     teamTabsEl.appendChild(btn);
   });
-  const first = teamTabsEl.querySelector(".team-tab");
+
+  const first = teamTabsEl.querySelector(".team-logo-btn");
   if (first) first.classList.add("active");
 }
 
@@ -82,18 +106,38 @@ function updateTeam(code) {
   if (!modelData) return;
   const block = modelData.best12[code];
   if (!block) return;
+
   teamTitleEl.textContent = `${code} – XI & Impact Player`;
-  renderXI(code, block.xi);
-  renderImpact(block.impact);
+
+  // theme the background for XI and impact card using team colour
+  const themeColor = teamColors[code] || "#ffffff";
+
+  document.documentElement.style.setProperty(
+    "--accent1",
+    lighten(themeColor, 0.25)
+  );
+  document.documentElement.style.setProperty(
+    "--accent2",
+    lighten(themeColor, -0.1)
+  );
+
+  renderXI(code, block.xi, themeColor);
+  renderImpact(block.impact, themeColor);
 }
 
-function renderXI(teamCode, xi) {
+function renderXI(teamCode, xi, themeColor) {
   xiListEl.innerHTML = "";
   const captainName = CAPTAINS[teamCode];
 
-  xi.forEach(player => {
+  xi.forEach((player, index) => {
     const li = document.createElement("li");
     li.className = "xi-item";
+
+    const hueBg = `${hexToRgba(themeColor, 0.28)}`;
+    const border = `${hexToRgba(themeColor, 0.7)}`;
+    li.style.background = `radial-gradient(circle at 0 0, ${hueBg}, #050816)`;
+    li.style.borderColor = border;
+    li.style.animationDelay = `${index * 0.04}s`;
 
     const main = document.createElement("div");
     main.className = "xi-main";
@@ -102,6 +146,7 @@ function renderXI(teamCode, xi) {
     const nameEl = document.createElement("div");
     nameEl.className = "xi-name";
     nameEl.textContent = player.name;
+
     const roleEl = document.createElement("div");
     roleEl.className = "xi-role";
     roleEl.textContent = player.description || player.role;
@@ -118,12 +163,14 @@ function renderXI(teamCode, xi) {
       c.textContent = "C";
       tags.appendChild(c);
     }
+
     if (player.role === "keeper" || /wk/i.test(player.description || "")) {
       const wk = document.createElement("span");
       wk.className = "badge badge-wk";
       wk.textContent = "WK";
       tags.appendChild(wk);
     }
+
     if (player.overseas) {
       const o = document.createElement("span");
       o.className = "badge badge-overseas";
@@ -137,20 +184,21 @@ function renderXI(teamCode, xi) {
 
     main.appendChild(nameRole);
     main.appendChild(scoreEl);
-
     li.appendChild(main);
+
     if (tags.childNodes.length) li.appendChild(tags);
 
     xiListEl.appendChild(li);
   });
 }
 
-function renderImpact(impact) {
+function renderImpact(impact, themeColor) {
   if (!impact || !impact.name) {
     impactCardEl.classList.add("empty");
-    impactCardEl.innerHTML = "<p>No impact player available.</p>";
+    impactCardEl.innerHTML = "No impact player available.";
     return;
   }
+
   impactCardEl.classList.remove("empty");
   impactCardEl.innerHTML = "";
 
@@ -168,11 +216,17 @@ function renderImpact(impact) {
     impact.overseas ? "Overseas" : "Indian"
   }`;
 
+  const bg = hexToRgba(themeColor, 0.3);
+  const border = hexToRgba(themeColor, 0.9);
+  impactCardEl.style.background = `radial-gradient(circle at 0 0, ${bg}, #151932)`;
+  impactCardEl.style.borderColor = border;
+
   impactCardEl.appendChild(label);
   impactCardEl.appendChild(name);
   impactCardEl.appendChild(meta);
 }
 
+/* Cap tables */
 function renderCaps() {
   runsTableBody.innerHTML = "";
   modelData.top_runs_pred.forEach((row, idx) => {
@@ -181,7 +235,7 @@ function renderCaps() {
       <td>${idx + 1}</td>
       <td>${row.name}</td>
       <td>${row.team}</td>
-      <td>${(row.score * 100).toFixed(1)}</td>
+      <td>${(row.score * 100).toFixed(0)}</td>
     `;
     runsTableBody.appendChild(tr);
   });
@@ -193,31 +247,34 @@ function renderCaps() {
       <td>${idx + 1}</td>
       <td>${row.name}</td>
       <td>${row.team}</td>
-      <td>${(row.score * 100).toFixed(1)}</td>
+      <td>${(row.score * 100).toFixed(0)}</td>
     `;
     wicketsTableBody.appendChild(tr);
   });
 }
 
+/* Projections */
 function renderProjections() {
   projectionsBody.innerHTML = "";
-  modelData.projections.forEach(row => {
+  modelData.projections.forEach((row) => {
     const tr = document.createElement("tr");
     tr.innerHTML = `
       <td>${row.team}</td>
       <td>${row.strength.toFixed(3)}</td>
-      <td>${(row.p_top4 * 100).toFixed(0)}%</td>
-      <td>${(row.p_title * 100).toFixed(0)}%</td>
+      <td>${(row.p_top4 * 100).toFixed(1)}%</td>
+      <td>${(row.p_title * 100).toFixed(1)}%</td>
     `;
     projectionsBody.appendChild(tr);
   });
 }
 
+/* Winner modal */
 function wireWinner() {
+  if (!winnerButton) return;
   const winnerTeam = modelData.title_favourite;
-  winnerNameEl.textContent = winnerTeam || "N/A";
 
   winnerButton.addEventListener("click", () => {
+    winnerNameEl.textContent = winnerTeam || "N/A";
     winnerModal.classList.remove("hidden");
   });
 
@@ -225,11 +282,54 @@ function wireWinner() {
     winnerModal.classList.add("hidden");
   });
 
-  winnerModal.addEventListener("click", e => {
-    if (e.target === winnerModal) {
+  winnerModal.addEventListener("click", (e) => {
+    if (e.target === winnerModal || e.target.classList.contains("winner-backdrop")) {
       winnerModal.classList.add("hidden");
     }
   });
 }
 
+/* Helpers */
+function hexToRgba(hex, alpha) {
+  if (!hex) return `rgba(255,255,255,${alpha})`;
+  let h = hex.replace("#", "");
+  if (h.length === 3) {
+    h = h
+      .split("")
+      .map((c) => c + c)
+      .join("");
+  }
+  const num = parseInt(h, 16);
+  const r = (num >> 16) & 255;
+  const g = (num >> 8) & 255;
+  const b = num & 255;
+  return `rgba(${r}, ${g}, ${b}, ${alpha})`;
+}
+
+function lighten(hex, amount) {
+  let h = hex.replace("#", "");
+  if (h.length === 3) {
+    h = h
+      .split("")
+      .map((c) => c + c)
+      .join("");
+  }
+  let num = parseInt(h, 16);
+  let r = (num >> 16) & 255;
+  let g = (num >> 8) & 255;
+  let b = num & 255;
+
+  const factor = amount;
+  r = clamp(Math.round(r + 255 * factor), 0, 255);
+  g = clamp(Math.round(g + 255 * factor), 0, 255);
+  b = clamp(Math.round(b + 255 * factor), 0, 255);
+
+  return "#" + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1);
+}
+
+function clamp(v, min, max) {
+  return Math.min(max, Math.max(min, v));
+}
+
+/* Kick off */
 loadModel();
