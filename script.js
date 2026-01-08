@@ -18,14 +18,14 @@ const teamColors = {
 const teamLogos = {
   CSK: "csk.png",
   DC: "dc.png",
-  GT: "gujarat.jpg",
+  GT: "gill.png",
   KKR: "kkr.png",
   LSG: "lsg.png",
-  MI: "bombay.jpg",
+  MI: "rohir.png",
   PBKS: "pbks.png",
-  RR: "raj.jpg",
+  RR: "jais.png",
   RCB: "rcb.png",
-  SRH: "hyd.png"
+  SRH: "ab.png"
 };
 
 
