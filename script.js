@@ -78,8 +78,9 @@ function renderTeamTabs() {
     const btn = document.createElement("button");
     btn.className = "team-logo-btn";
     btn.dataset.code = code;
-    btn.style.borderColor = `${teamColors[code]}aa`;
-    btn.style.boxShadow = `0 10px 24px ${teamColors[code]}55`;
+    btn.style.borderColor = `${teamColors[code]}aa`; // keep only the colour accent
+// no custom boxShadow here – let CSS handle the strong glow
+
 
     const img = document.createElement("img");
     img.src = teamLogos[code];
