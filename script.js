@@ -17,7 +17,7 @@ const teamColors = {
 // paths to the logos you attached
 const teamLogos = {
   CSK: "csk.png",
-  DC: "dc.png",
+  DC: "delhi.png",
   GT: "gill.png",
   KKR: "kkr.png",
   LSG: "lsg.png",
