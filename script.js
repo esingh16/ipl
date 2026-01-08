@@ -16,17 +16,18 @@ const teamColors = {
 
 // paths to the logos you attached
 const teamLogos = {
-  CSK: "csk.jpg",
-  DC: "dc.jpg",
-  GT: "gt.jpg",
-  KKR: "kkr.jpg",
-  LSG: "lsg.jpg",
-  MI: "mi.jpg",
-  PBKS: "pbks.jpg",
-  RR: "rr.jpg",
-  RCB: "rcb.jpg",
-  SRH: "srh.jpg"
+  CSK: "csk.png",
+  DC: "dc.png",
+  GT: "gt.png",
+  KKR: "kkr.png",
+  LSG: "lsg.png",
+  MI: "mi.png",
+  PBKS: "pbks.png",
+  RR: "rr.png",
+  RCB: "rcb.png",
+  SRH: "srh.png"
 };
+
 
 // captains
 const CAPTAINS = {
